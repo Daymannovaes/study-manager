@@ -1,0 +1,336 @@
+{
+	"name": "ENEM, Edital do aluno.",
+	"description": "Já pensou guiar seus estudos baseado no edital?",
+	"hints": "",
+	"references": [
+		{
+			"name": "Ciências Humanas",
+			"subjects": ["História", "Geografia", "Filosofia", "Sociologia"],
+			"sub": [
+				{
+					"desc": "Cultura",
+					"sub": [
+						{
+							"desc": "Cultura material e imaterial",
+							"sub": []
+						},
+						{
+							"desc": "Diversidade cultural brasileira",
+							"sub": []
+						},
+						{
+							"desc": "Conquista da américa, conflitos entre europeus e indígenas",
+							"sub": []
+						},
+						{
+							"desc": "Negro na formação da sociedade",
+							"hints": ["Conversar sobre"],
+							"sub": [{"desc":"see hints"},{"desc":"see hints"},{"desc":"see hints"},{"desc":"see hints"}]
+						},
+						{
+							"desc": "Movimentos culturais ocidentais",
+							"hints": [],
+							"sub": []
+						}
+					]
+				},
+				{
+					"desc": "Sociedade e política",
+					"sub": [
+						{
+							"desc": "Cidadania na antiguidade",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Democracia direta, indireta e representativa",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Revoluções sociais e políticas na Europa",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Formação do território brasileiro",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Regiões do Brasil",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Lutas por independência nas américas",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Conflitos no Brasil imperial",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Liberalismo nos séculos XIX e XX",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Colonização e migração no Brasil XIX e XX",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Revolução Russa",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Revolução Cubana",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Revolução Chinesa",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Imperialismo",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "As guerras mundiais",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Guerra fria",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Nazismo e Facismo",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Fraquismo, Salarazismo, Stalinismo",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Ditaduras nas américas",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Multilaterização mundial pós guerra fria XX e XXI",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Luta por direitos cidadãos",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Vida urbana",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Hierarquias urbanas sociais",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Pobreza e segregação espacial",
+							"hints": [],
+							"sub": []
+						}
+					]
+				},
+				{
+					"desc": "Estruturas produtivas",
+					"sub": [
+						{
+							"desc": "Escravismo antigo",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Feudalismo",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Capitalismo",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Socialismo",
+							"hints": ["Diferença entre essas quatro"],
+							"sub": []
+						},
+						{
+							"desc": "Complexo açucareiro no Brasil, exportação",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Mineração no período colonial",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Revolução Industrial",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Toyotismo, Fordismo e novas técnicas de produção (taylorismo)",
+							"hints": [],
+							"sub": []
+						},
+						{	
+							"desc": "Industralização Brasileira, transformações trabalhistas",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Globalização",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Tecnologias de Telecomunicação e consequências socias e políticas",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "transformações do espaço agrário",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Modernização do espaço agrário",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Relação campo cidade",
+							"hints": [],
+							"sub": []
+						}
+					]
+				},
+				{
+					"desc": "O homem e o meio ambiente",
+					"sub": [
+						{
+							"desc": "Apropriação dos recursos pelas sociedades ao longo do tempo",
+							"hints": [""],
+							"sub": []
+						},
+						{
+							"desc": "Impacto ambiental das atividades econômicas no Brasil",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Bacias Hidrográficas",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Efeitos climáticos (ilhas, chuva ácida, efeito estufa)",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Nova ordem ambiental nacional",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Uso e conservação dos recursos naturais",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Origem e evolução do conceito de SUSTENTABILIDADE",
+							"hints": ["Interessante, ler mais"],
+							"sub": []
+						},
+						{
+							"desc": "Estrutura interna da Terra",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Solo e relevo",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Agentes modeladores endógenos e exógenos",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Grandes domínios da vegetação Brasileira",
+							"hints": [],
+							"sub": []
+						}
+					]
+				},
+				{
+					"desc": "Representação espacial",
+					"sub": [
+						{
+							"desc": "Cartografia",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Mapas temáticos",
+							"hints": [],
+							"sub": []
+						},
+						{
+							"desc": "Mapas em geral",
+							"hints": [],
+							"sub": []
+						}
+					]
+				}
+			],
+			"color": "#1330FF"
+		},
+		{
+			"name": "Ciências da Natureza",
+			"sub": [
+				{
+					"desc": "Biologia",
+					"sub": [
+						
+					]
+				}
+			],
+			"color": "#4264E9"
+		},
+		{
+			"name": "Matemática",
+			"color": "#233FAC"
+		},
+		{
+			"name": "Linguagens",
+			"color": "#0878B8"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+<ul data-ng-repeat="sub in sub.sub" data-ng-init="init(this)">
+	<li data-ng-class="subClass(sub)" data-ng-click="toggle(sub)" tabindex="2">
+		
+		
+		<span data-ng-include="template.edit(sub)">
+		</span>
+
+		<button data-ng-click="add(sub)">
+			+
+		</button>
+		<button data-ng-click="remove(this.$parent.$parent.sub, $index)">
+			-
+		</button>
+
+		<div class="sub-info">
+			<paper-checkbox  class="{{$id}}" data-ng-model="sub.studied" data-ng-click="toggle(sub);studied.update(this,$event);" onclick="return false;"></paper-checkbox>
+			<label class="child-number">
+				{{sub.sub.length}}
+			</label>
+		</div>
+	</li>
+
+	<div data-ng-hide="sub.hideSubs" data-ng-include="template.children(sub)">
+		
+	</div>
+</ul>

@@ -1,0 +1,33 @@
+.complete-0 {
+    background: transparent;	
+}
+.complete-1 {
+    background: linear-gradient(90deg, #6AEC49 1%, transparent 20%);
+}
+.complete-2 {
+    background: linear-gradient(90deg, #6AEC49 10%, transparent 30%);
+}
+.complete-3 {
+    background: linear-gradient(90deg, #6AEC49 20%, transparent 40%);
+}
+.complete-4 {
+    background: linear-gradient(90deg, #6AEC49 30%, transparent 50%);
+}
+.complete-5 {
+    background: linear-gradient(90deg, #6AEC49 42%, transparent 60%);
+}
+.complete-6 {
+    background: linear-gradient(90deg, #6AEC49 56%, transparent 70%);
+}
+.complete-7 {
+    background: linear-gradient(90deg, #6AEC49 70%, transparent 80%);
+}
+.complete-8 {
+    background: linear-gradient(90deg, #6AEC49 80%, transparent 90%);
+}
+.complete-9 {
+    background: linear-gradient(90deg, #6AEC49 90%, transparent);
+}
+.complete-10 {
+    background: linear-gradient(90deg, #6AEC49 100%, transparent);
+}

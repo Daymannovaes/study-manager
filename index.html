@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ENEM screenplay</title>
+	<link rel="stylesheet" type="text/css" href="assets/libs/bootstrap/styles/bootstrap.css">
+	
+	<link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/reference.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/complete.css">
+	
+	<script src="components/platform/platform.js"></script>
+	<link rel="import" href="components/paper-checkbox/paper-checkbox.html">
+
+	<script type="text/javascript" src="assets/libs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="assets/libs/angular/angular.js"></script>
+	<script type="text/javascript" src="assets/libs/bootstrap/scripts/bootstrap.js"></script>
+
+	<script type="text/javascript" src="assets/scripts/app.js"></script>
+
+	<script type="text/javascript" src="assets/scripts/mainController.js"></script>
+
+	<script type="text/javascript" src="assets/scripts/directives/subs.js"></script>
+
+
+</head>
+<body>
+
+<div data-ng-app="screenplay">
+	<div data-ng-controller="mainController">
+
+		<div id="wrapper">
+
+			<div id="header">
+				<div class="container">
+					<div class="page-header">		
+						<h1> {{screenplay.name}} <small style="color:white"> {{screenplay.description}} </small></h1>
+					</div>
+					<h2 style="display:inline">A ideia é simples,</h2> <h3>são apenas <strong>tópicos</strong>, onde a cada vez que você marcar <strong>"estudei"</strong>, uma barra de progresso indicará o quanto falta para concluir aquela etapa.</h3>
+					<p></p>
+					<p>Em poucos dias de estudo é fácil ver que a barra de progresso está quase completa. Foi tudo uma questão de organização, separando o edital em tópicos, conseguimos guiar nossos estudos, de forma que, em quanto mais tópicos destrincharmos, menos tempo perderemos estudando coisas "desnecessárias" e mais focado ficamos. Aproveite!<p>
+
+					<h3>@TODO</h3><h2>collapse all, expande all, reduce (to localstorage), cancelar ultima alteração, mover tópico (para cima e para baixo)</h2>
+					<p></p>
+					<button onclick="localStorage.clear();saveInLocalStorage=true;">
+						Limpar
+					</button>
+					<p><a href="site">Site do Enem</a></p>
+					<p><a href="site">Edital do Enem</a></p>
+					<p><a href="site">Contato</a></p>
+					<p><a href="site">Download desse aplicativo</a></p>
+
+					<div class="reference-container">
+						<div data-ng-repeat="reference in screenplay.references">
+
+							<div class="reference">
+								<div ng-class="reference.referenceClass" class="reference-title" data-ng-click="toggleref(this)" style="background-color:{{reference.color}}">
+									<h3>{{reference.name}}</h3>
+								</div>
+								<div class="something">
+									<div class="reference-content-container"  data-ng-class="reference.show">								
+										<div class="reference-content" data-ng-repeat="sub in reference.sub">
+											<div data-ng-click="toggle(sub)" data-ng-class="subClass(sub)" class="sub-li" data-ng-init="init(this)">
+												
+												<h3>
+													{{ sub.desc }}
+												</h3>
+												<button data-ng-click="add(sub)">
+													+
+												</button>
+												<div class="sub-info">
+													<paper-checkbox  class="{{$id}}" data-ng-model="sub.studied" data-ng-click="toggle(sub);studied.update(this,$event);" onclick="return false;"></paper-checkbox>
+													<label class="child-number">
+														{{sub.sub.length}}
+													</label>
+												</div>
+											</div>
+
+											<div data-ng-hide="sub.hideSubs" class="sub-content">
+												<span data-ng-include="template.children(sub)" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> <!-- END repeat references -->
+					</div> <!-- END reference container -->
+				</div>
+			</div> <!-- END header -->
+			<!-- <div id="footer">
+				footer
+			</div> -->
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
