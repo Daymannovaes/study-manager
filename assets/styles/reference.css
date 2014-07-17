@@ -1,5 +1,5 @@
 .reference-containerfalse, .reference-container {
-	position: absolute;
+	position: fixed;
 
 	width: 100%;
 	
@@ -9,8 +9,8 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	
 }
+
 .reference-containertrue {
 	transition: 400ms all;
 	position: fixed;
@@ -25,9 +25,19 @@
 .reference-title {
 	transition: 400ms all;
 	top:500px;
-	padding: 20px;
+	padding: 35px;
 	
 }
+
+@media screen and (orientation:portrait) {
+	.reference-title {
+		padding: 45px;
+	}
+	.reference-title-true {
+		padding: 30px;
+	}
+}
+
 .reference-title-true {
 
 	transition: 400ms all;
@@ -37,7 +47,7 @@
 	left: 0;
 	right: 0;
 	z-index: 30;
-	padding: 20px;
+	padding: 15px;
 	
 }
 

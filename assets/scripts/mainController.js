@@ -39,6 +39,7 @@ SPapp.controller("mainController",
 			activeReference.show = "reference-content-container-false";
 
 		$this.$parent.opened = false;
+		$this.reference.search = false; 
 		$this.reference.referenceClass = "reference-title";
 
 		if(activeReference == $this.reference) {
@@ -51,7 +52,18 @@ SPapp.controller("mainController",
 
 		$this.reference.referenceClass = "reference-title-true";		
 		$this.$parent.opened = true;
+		$this.reference.search = true;
+
+		$scope.collapseAll($this.reference.sub);
 		$this.reference.show = "reference-content-container-true";
+	}
+	$scope.collapseAll = function(subs) {
+		for(index in subs) {
+			if(subs[index].sub && subs[index].sub[0]) {
+				subs[index].hideSubs = true;
+				$scope.collapseAll(subs[index].sub);
+			}
+		}
 	}
 
 	$scope.getPercentChildrenComplete = function(sub) {
@@ -69,7 +81,7 @@ SPapp.controller("mainController",
 
 		rate = checked/length;
 		sub.rate = rate;
-		return Math.round(rate*10);
+		return Math.floor(rate*10);
 
 
 	}
@@ -96,7 +108,7 @@ SPapp.controller("mainController",
 
 		$timeout(function() {
 			$scope.bindEventToPolymer(sub);
-		},250);
+		},50);
 	}
 
 	$scope.bindEventToPolymer = function(sub) {
@@ -120,8 +132,7 @@ SPapp.controller("mainController",
 
 		var newSub = {
 			edit:true,
-			studied:false,
-			newElement:true
+			studied:false
 		}
 		sub.sub.unshift(newSub);
 
@@ -202,13 +213,30 @@ SPapp.controller("mainController",
 
 		sub.edited = sub.edited == undefined ? false : sub.edited || sub.desc != sub.old_desc;
 	}
+	$scope.initInput = function($this) {
+		console.log();
+		$this.sub.old_desc = $this.sub.desc;
+		$timeout(function() {
+			$("input."+$this.$id).focus();
+		},250);
+	}
 }]);
 
 window.onbeforeunload = function() {
 	removeProp(screenplay, "element");
+	removeProp(screenplay, "hideSubs");
+	desactivateReferences(screenplay);
 
 	if(saveInLocalStorage)
 		localStorage.setItem("screenplay", JSON.stringify(screenplay));	
+}
+
+desactivateReferences = function() {
+	for(index in screenplay.references) {
+		delete screenplay.references[index].referenceClass;
+		delete screenplay.references[index].opened;
+		delete screenplay.references[index].show;
+	}
 }
 
 removeProp = function(obj, prop, notRecursive) {

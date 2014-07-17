@@ -41,10 +41,10 @@ body {
 	padding-bottom: 0px;
 
 
-	background: -webkit-linear-gradient(#2274EF 10%, #1164DF 30%); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#2274EF 10%, #1164DF 30%); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#2274EF 10%, #1164DF 30%); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#2274EF 10%, #1164DF 30%);
+	background: -webkit-linear-gradient(#1164DF 10%, #0066FF 30%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#1164DF 10%, #0066FF 30%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#1164DF 10%, #0066FF 30%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#1164DF 10%,#0066FF 30%);
 }
 
 #content {
@@ -223,4 +223,32 @@ span.sub-desc:hover {
 	margin-left:10px;
 	
 	font-weight: normal;
+}
+
+.searchfalse, .search {
+	display: none;
+	width: 0;
+	height: 0;
+	margin:0;
+	padding:0;
+
+	opacity: 0;
+}
+.searchtrue {
+	opacity: 1;
+	transition: 2000ms opacity;
+	display: inline;
+
+	position: inherit;
+
+	right: 5%;
+}
+
+.search input {	
+	display: inline;
+}
+
+ul {
+	padding-left: 20px;
+	border-left: 1px dashed gray;
 }

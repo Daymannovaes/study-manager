@@ -1,7 +1,7 @@
-<form data-ng-submit="validate(sub)" data-ng-init="sub.old_desc = sub.desc">
-	<input class="myform form-control"
+<form data-ng-submit="validate(sub)" data-ng-init="initInput(this)">
+	<input class="myform form-control {{$id}}"
 	data-ng-click="toggle(sub)"
 	data-ng-dblclick="sub.edit = false"
 	data-ng-model="sub.desc" 
-	tabindex="1" />
+	tabindex="1" autofocus />
 </form>

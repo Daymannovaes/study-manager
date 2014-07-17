@@ -1,336 +1,2013 @@
 {
-	"name": "ENEM, Edital do aluno.",
-	"description": "Já pensou guiar seus estudos baseado no edital?",
-	"hints": "",
-	"references": [
-		{
-			"name": "Ciências Humanas",
-			"subjects": ["História", "Geografia", "Filosofia", "Sociologia"],
-			"sub": [
-				{
-					"desc": "Cultura",
-					"sub": [
-						{
-							"desc": "Cultura material e imaterial",
-							"sub": []
-						},
-						{
-							"desc": "Diversidade cultural brasileira",
-							"sub": []
-						},
-						{
-							"desc": "Conquista da américa, conflitos entre europeus e indígenas",
-							"sub": []
-						},
-						{
-							"desc": "Negro na formação da sociedade",
-							"hints": ["Conversar sobre"],
-							"sub": [{"desc":"see hints"},{"desc":"see hints"},{"desc":"see hints"},{"desc":"see hints"}]
-						},
-						{
-							"desc": "Movimentos culturais ocidentais",
-							"hints": [],
-							"sub": []
-						}
-					]
-				},
-				{
-					"desc": "Sociedade e política",
-					"sub": [
-						{
-							"desc": "Cidadania na antiguidade",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Democracia direta, indireta e representativa",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Revoluções sociais e políticas na Europa",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Formação do território brasileiro",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Regiões do Brasil",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Lutas por independência nas américas",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Conflitos no Brasil imperial",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Liberalismo nos séculos XIX e XX",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Colonização e migração no Brasil XIX e XX",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Revolução Russa",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Revolução Cubana",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Revolução Chinesa",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Imperialismo",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "As guerras mundiais",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Guerra fria",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Nazismo e Facismo",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Fraquismo, Salarazismo, Stalinismo",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Ditaduras nas américas",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Multilaterização mundial pós guerra fria XX e XXI",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Luta por direitos cidadãos",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Vida urbana",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Hierarquias urbanas sociais",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Pobreza e segregação espacial",
-							"hints": [],
-							"sub": []
-						}
-					]
-				},
-				{
-					"desc": "Estruturas produtivas",
-					"sub": [
-						{
-							"desc": "Escravismo antigo",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Feudalismo",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Capitalismo",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Socialismo",
-							"hints": ["Diferença entre essas quatro"],
-							"sub": []
-						},
-						{
-							"desc": "Complexo açucareiro no Brasil, exportação",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Mineração no período colonial",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Revolução Industrial",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Toyotismo, Fordismo e novas técnicas de produção (taylorismo)",
-							"hints": [],
-							"sub": []
-						},
-						{	
-							"desc": "Industralização Brasileira, transformações trabalhistas",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Globalização",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Tecnologias de Telecomunicação e consequências socias e políticas",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "transformações do espaço agrário",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Modernização do espaço agrário",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Relação campo cidade",
-							"hints": [],
-							"sub": []
-						}
-					]
-				},
-				{
-					"desc": "O homem e o meio ambiente",
-					"sub": [
-						{
-							"desc": "Apropriação dos recursos pelas sociedades ao longo do tempo",
-							"hints": [""],
-							"sub": []
-						},
-						{
-							"desc": "Impacto ambiental das atividades econômicas no Brasil",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Bacias Hidrográficas",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Efeitos climáticos (ilhas, chuva ácida, efeito estufa)",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Nova ordem ambiental nacional",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Uso e conservação dos recursos naturais",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Origem e evolução do conceito de SUSTENTABILIDADE",
-							"hints": ["Interessante, ler mais"],
-							"sub": []
-						},
-						{
-							"desc": "Estrutura interna da Terra",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Solo e relevo",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Agentes modeladores endógenos e exógenos",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Grandes domínios da vegetação Brasileira",
-							"hints": [],
-							"sub": []
-						}
-					]
-				},
-				{
-					"desc": "Representação espacial",
-					"sub": [
-						{
-							"desc": "Cartografia",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Mapas temáticos",
-							"hints": [],
-							"sub": []
-						},
-						{
-							"desc": "Mapas em geral",
-							"hints": [],
-							"sub": []
-						}
-					]
-				}
-			],
-			"color": "#1330FF"
-		},
-		{
-			"name": "Ciências da Natureza",
-			"sub": [
-				{
-					"desc": "Biologia",
-					"sub": [
-						
-					]
-				}
-			],
-			"color": "#4264E9"
-		},
-		{
-			"name": "Matemática",
-			"color": "#233FAC"
-		},
-		{
-			"name": "Linguagens",
-			"color": "#0878B8"
-		}
-	]
+    "name": "ENEM, Edital do aluno.",
+    "description": "Já pensou guiar seus estudos baseado no edital?",
+    "hints": "",
+    "references": [
+        {
+            "name": "Ciências Humanas",
+            "subjects": [
+                "História",
+                "Geografia",
+                "Filosofia",
+                "Sociologia"
+            ],
+            "sub": [
+                {
+                    "desc": "Cultura",
+                    "sub": [
+                        {
+                            "desc": "Cultura material e imaterial",
+                            "sub": [],
+                            "$$hashKey": "00U",
+                            "studied": false,
+                            "rate": null,
+                            "edit": false,
+                            "old_desc": "Cultura material e imaterial",
+                            "edited": false
+                        },
+                        {
+                            "desc": "Diversidade cultural brasileira",
+                            "sub": [],
+                            "$$hashKey": "00V",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Conquista da américa, conflitos entre europeus e indígenas",
+                            "sub": [],
+                            "$$hashKey": "00W",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Negro na formação da sociedade",
+                            "hints": [
+                                "Conversar sobre"
+                            ],
+                            "sub": [],
+                            "$$hashKey": "00X",
+                            "studied": false,
+                            "rate": 0
+                        },
+                        {
+                            "desc": "Movimentos culturais ocidentais",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "00Y",
+                            "studied": false,
+                            "rate": null
+                        }
+                    ],
+                    "$$hashKey": "00C",
+                    "studied": false,
+                    "rate": 0
+                },
+                {
+                    "desc": "Sociedade e política",
+                    "sub": [
+                        {
+                            "desc": "Cidadania na antiguidade",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "014",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Democracia direta, indireta e representativa",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "015",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Revoluções sociais e políticas na Europa",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "016",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Formação do território brasileiro",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "017",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Regiões do Brasil",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "018",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Lutas por independência nas américas",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "019",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Conflitos no Brasil imperial",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "01A",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Liberalismo nos séculos XIX e XX",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "01B",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Colonização e migração no Brasil XIX e XX",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "01C",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Revolução Russa",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "01D",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Revolução Cubana",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "01E",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Revolução Chinesa",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "01F",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Imperialismo",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "01G",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "As guerras mundiais",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "01H",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Guerra fria",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "01I",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Nazismo e Facismo",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "01J",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Fraquismo, Salarazismo, Stalinismo",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "01K",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Ditaduras nas américas",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "01L",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Multilaterização mundial pós guerra fria XX e XXI",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "01M",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Luta por direitos cidadãos",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "01N",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Vida urbana",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "01O",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Hierarquias urbanas sociais",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "01P",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Pobreza e segregação espacial",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "01Q",
+                            "studied": false,
+                            "rate": null
+                        }
+                    ],
+                    "$$hashKey": "00D",
+                    "studied": false,
+                    "rate": 0
+                },
+                {
+                    "desc": "Estruturas produtivas",
+                    "sub": [
+                        {
+                            "desc": "Escravismo antigo",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "02E",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Feudalismo",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "02F",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Capitalismo",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "02G",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Socialismo",
+                            "hints": [
+                                "Diferença entre essas quatro"
+                            ],
+                            "sub": [],
+                            "$$hashKey": "02H",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Complexo açucareiro no Brasil, exportação",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "02I",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Mineração no período colonial",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "02J",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Revolução Industrial",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "02K",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Toyotismo, Fordismo e novas técnicas de produção (taylorismo)",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "02L",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Industralização Brasileira, transformações trabalhistas",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "02M",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Globalização",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "02N",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Tecnologias de Telecomunicação e consequências socias e políticas",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "02O",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "transformações do espaço agrário",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "02P",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Modernização do espaço agrário",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "02Q",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Relação campo cidade",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "02R",
+                            "studied": false,
+                            "rate": null
+                        }
+                    ],
+                    "$$hashKey": "00E",
+                    "studied": false,
+                    "rate": 0
+                },
+                {
+                    "desc": "O homem e o meio ambiente",
+                    "sub": [
+                        {
+                            "desc": "Apropriação dos recursos pelas sociedades ao longo do tempo",
+                            "hints": [
+                                ""
+                            ],
+                            "sub": [],
+                            "$$hashKey": "036",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Impacto ambiental das atividades econômicas no Brasil",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "037",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Bacias Hidrográficas",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "038",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Efeitos climáticos (ilhas, chuva ácida, efeito estufa)",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "039",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Nova ordem ambiental nacional",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "03A",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Uso e conservação dos recursos naturais",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "03B",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Origem e evolução do conceito de SUSTENTABILIDADE",
+                            "hints": [
+                                "Interessante, ler mais"
+                            ],
+                            "sub": [],
+                            "$$hashKey": "03C",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Estrutura interna da Terra",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "03D",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Solo e relevo",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "03E",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Agentes modeladores endógenos e exógenos",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "03F",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Grandes domínios da vegetação Brasileira",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "03G",
+                            "studied": false,
+                            "rate": null
+                        }
+                    ],
+                    "$$hashKey": "00F",
+                    "studied": false,
+                    "rate": 0
+                },
+                {
+                    "desc": "Representação espacial",
+                    "sub": [
+                        {
+                            "desc": "Cartografia",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "03S",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Mapas temáticos",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "03T",
+                            "studied": false,
+                            "rate": null
+                        },
+                        {
+                            "desc": "Mapas em geral",
+                            "hints": [],
+                            "sub": [],
+                            "$$hashKey": "03U",
+                            "studied": false,
+                            "rate": null
+                        }
+                    ],
+                    "$$hashKey": "00G",
+                    "studied": false,
+                    "rate": 0
+                }
+            ],
+            "$$hashKey": "004",
+            "search": true,
+            "color1": "#0063FA",
+            "color2": "#0056D8",
+            "color": "#1733FF"
+        },
+        {
+            "name": "Ciências da Natureza",
+            "sub": [
+                {
+                    "desc": "Biologia",
+                    "sub": [
+                        {
+                            "edit": false,
+                            "studied": false,
+                            "newElement": true,
+                            "$$hashKey": "0GT",
+                            "sub": [
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0JX",
+                                    "sub": [],
+                                    "rate": null,
+                                    "desc": "Desenvolvimento sustentável",
+                                    "edited": false
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0JS",
+                                    "sub": [],
+                                    "rate": null,
+                                    "desc": "Exercícios físicos e vida saudável",
+                                    "edited": false
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0JN",
+                                    "sub": [],
+                                    "rate": null,
+                                    "desc": "Violência e segurança pública",
+                                    "edited": false
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0J3",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0JG",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Uso indevido de drogas",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0JC",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Gravidez na adolescência",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0J8",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Obesidade",
+                                            "edited": false
+                                        }
+                                    ],
+                                    "rate": 0,
+                                    "desc": "Aspectos sociais da biologia",
+                                    "edited": false
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0IY",
+                                    "sub": [],
+                                    "rate": null,
+                                    "desc": "Doenças sexualmente transmissíveis",
+                                    "edited": false
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0IT",
+                                    "sub": [],
+                                    "rate": null,
+                                    "desc": "Primeiros socorros",
+                                    "edited": false
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0HU",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0IM",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Caracterização",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0II",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Profilaxia",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0IE",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Prevenção",
+                                            "edited": false
+                                        }
+                                    ],
+                                    "rate": 0,
+                                    "desc": "Principais doenças que afetam o Brasil",
+                                    "edited": false
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0H8",
+                                    "sub": [],
+                                    "rate": null,
+                                    "desc": "Aspectos biológicos da pobreza",
+                                    "edited": false
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0H3",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0HM",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Sociais",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0HI",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Ambientais",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0HE",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Econômicos",
+                                            "edited": false
+                                        }
+                                    ],
+                                    "rate": 0,
+                                    "desc": "Indicadores",
+                                    "edited": false
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0GY",
+                                    "sub": [],
+                                    "rate": null,
+                                    "desc": "IDH",
+                                    "edited": false
+                                }
+                            ],
+                            "rate": 0,
+                            "old_desc": "Qualidade de vida",
+                            "desc": "Qualidade de vida",
+                            "edited": false
+                        },
+                        {
+                            "edit": false,
+                            "studied": false,
+                            "newElement": true,
+                            "$$hashKey": "0E8",
+                            "sub": [
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0FU",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0G7",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Explicações pré-darwinistas",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0G3",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "A teoria de Charles Darwin",
+                                            "edited": false
+                                        }
+                                    ],
+                                    "rate": 0,
+                                    "desc": "Teorias da evolução",
+                                    "edited": false
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0FQ",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0GE",
+                                            "sub": [
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "newElement": true,
+                                                    "$$hashKey": "0GN",
+                                                    "sub": [],
+                                                    "rate": null,
+                                                    "desc": "Em ambientes naturais",
+                                                    "edited": false
+                                                },
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "newElement": true,
+                                                    "$$hashKey": "0GJ",
+                                                    "sub": [],
+                                                    "rate": null,
+                                                    "desc": "Sobre a população humana",
+                                                    "edited": false
+                                                }
+                                            ],
+                                            "rate": 0,
+                                            "desc": "Impactos",
+                                            "edited": false
+                                        }
+                                    ],
+                                    "rate": 0,
+                                    "desc": "Seleção artificial",
+                                    "edited": false
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0EU",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0FB",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Sobre a origem do Universo",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0F7",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Sobre a origem da Terra",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0F3",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Sobre a origem dos seres vivos",
+                                            "edited": false
+                                        }
+                                    ],
+                                    "rate": 0,
+                                    "desc": "Hipóteses",
+                                    "edited": false
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0ED",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0F8",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "História",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0ES",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Métodos",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0EO",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Técnicas",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0EI",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Experimentação",
+                                            "edited": false
+                                        }
+                                    ],
+                                    "rate": 0,
+                                    "old_desc": "Biologia como ciência",
+                                    "desc": "Biologia como ciência",
+                                    "edited": false
+                                }
+                            ],
+                            "rate": 0,
+                            "desc": "Origem e evolução da vida",
+                            "edited": false
+                        },
+                        {
+                            "edit": false,
+                            "studied": false,
+                            "newElement": true,
+                            "$$hashKey": "0BQ",
+                            "sub": [
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0E5",
+                                    "sub": [],
+                                    "rate": null,
+                                    "desc": "Biodiversidade",
+                                    "edited": false
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0HA",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0HN",
+                                            "sub": [],
+                                            "desc": "Água",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0HJ",
+                                            "sub": [],
+                                            "desc": "Florestas",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0HF",
+                                            "sub": [],
+                                            "desc": "Unidades de conservação",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Legislação ambiental",
+                                    "edited": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0H5",
+                                    "sub": [],
+                                    "desc": "Saneamento básico",
+                                    "edited": false,
+                                    "rate": null
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0FU",
+                                    "sub": [],
+                                    "desc": "Tecnologias ambientais",
+                                    "edited": false,
+                                    "rate": null
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0EC",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0FA",
+                                            "sub": [],
+                                            "desc": "Poluição",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0F0",
+                                            "sub": [],
+                                            "desc": "Erosão",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0EP",
+                                            "sub": [],
+                                            "desc": "Mudanças climáticas",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0EL",
+                                            "sub": [],
+                                            "desc": "Efeito estufa",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0EH",
+                                            "sub": [],
+                                            "desc": "Desmatamento",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Problemas ambientais",
+                                    "edited": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0E3",
+                                    "sub": [],
+                                    "old_desc": "Exploração de recursos naturais",
+                                    "desc": "Exploração de recursos naturais",
+                                    "edited": false,
+                                    "rate": null
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0DT",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0DY",
+                                            "sub": [],
+                                            "desc": "Biomas brasileiros",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Biogeografia",
+                                    "edited": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0DJ",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0GV",
+                                            "sub": [],
+                                            "desc": "Fluxo de energia",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Ciclos biogeoquímicos",
+                                    "edited": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0D9",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0GG",
+                                            "sub": [
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "newElement": true,
+                                                    "$$hashKey": "0GL",
+                                                    "sub": [],
+                                                    "desc": "Habitat",
+                                                    "edited": false,
+                                                    "rate": null
+                                                }
+                                            ],
+                                            "desc": "Nicho ecológico",
+                                            "edited": false,
+                                            "rate": 0
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0GB",
+                                            "sub": [],
+                                            "desc": "Interações entre os seres vivos",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Dinâmica das populações",
+                                    "edited": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0C3",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0G5",
+                                            "sub": [],
+                                            "desc": "Conservação e recuperação",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0CC",
+                                            "sub": [],
+                                            "desc": "Fatores bióticos",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0C8",
+                                            "sub": [],
+                                            "desc": "Fatores abióticos",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Ecossistemas",
+                                    "edited": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0BV",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0D4",
+                                            "sub": [],
+                                            "desc": "Sucessão",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0CZ",
+                                            "sub": [],
+                                            "desc": "Comunidade clímax",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0CP",
+                                            "sub": [],
+                                            "desc": "Teia alimentar",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Comunidade",
+                                    "edited": false,
+                                    "rate": 0
+                                }
+                            ],
+                            "desc": "Ecologia",
+                            "edited": true,
+                            "rate": 0
+                        },
+                        {
+                            "edit": false,
+                            "studied": false,
+                            "newElement": true,
+                            "$$hashKey": "08T",
+                            "sub": [
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0CF",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0CS",
+                                            "sub": [],
+                                            "desc": "Embriologia",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0CO",
+                                            "sub": [],
+                                            "desc": "Fisiologia",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0CK",
+                                            "sub": [],
+                                            "desc": "Anatomia",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Corpo humano",
+                                    "edited": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0CA",
+                                    "sub": [],
+                                    "desc": "Sistemática",
+                                    "edited": false,
+                                    "rate": null
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0C0",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0C5",
+                                            "sub": [],
+                                            "desc": "Adaptação a diferentes ambientes",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Funções vitais",
+                                    "edited": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0BK",
+                                    "sub": [],
+                                    "desc": "Tipos de ciclo de vida",
+                                    "edited": false,
+                                    "rate": null
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0BG",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0BU",
+                                            "sub": [],
+                                            "desc": "Padrões anatômicos",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0BQ",
+                                            "sub": [],
+                                            "desc": "Padrões fisiológicos",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Evolução",
+                                    "edited": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0BB",
+                                    "sub": [],
+                                    "desc": "As grandes linhas de evolução",
+                                    "edited": false,
+                                    "rate": null
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0AB",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0AS",
+                                            "sub": [],
+                                            "desc": "Vírus",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0AO",
+                                            "sub": [],
+                                            "desc": "Procariontes",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0AK",
+                                            "sub": [],
+                                            "desc": "Eucariontes",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Níveis de organização",
+                                    "edited": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0A7",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0D4",
+                                            "sub": [],
+                                            "desc": "Autótrofos",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0D0",
+                                            "sub": [],
+                                            "desc": "Heterótrofos",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Tipo de alimentação",
+                                    "edited": false,
+                                    "rate": 0
+                                }
+                            ],
+                            "desc": "Identidade dos seres vivos",
+                            "edited": false,
+                            "rate": 0
+                        },
+                        {
+                            "edit": false,
+                            "studied": false,
+                            "newElement": true,
+                            "$$hashKey": "08K",
+                            "sub": [
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0B4",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0BH",
+                                            "sub": [],
+                                            "desc": "Formação",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0BD",
+                                            "sub": [],
+                                            "desc": "Manutenção",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Diversidade da vida",
+                                    "edited": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0AZ",
+                                    "sub": [],
+                                    "desc": "Aconselhamento genético",
+                                    "edited": false,
+                                    "rate": null
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "0AC",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0AL",
+                                            "sub": [],
+                                            "desc": "Gênicas",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0AH",
+                                            "sub": [],
+                                            "desc": "Cromossômicas",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Mutações",
+                                    "edited": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "09H",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0A1",
+                                            "sub": [],
+                                            "desc": "Doenças autoimunes",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "09W",
+                                            "sub": [],
+                                            "desc": "Transplante",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "09Q",
+                                            "sub": [],
+                                            "desc": "Grupos sanguineos",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "09M",
+                                            "sub": [],
+                                            "desc": "Antígenos e anticorpos",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Sangue",
+                                    "edited": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "09D",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0A7",
+                                            "sub": [],
+                                            "desc": "Influências ambientais",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Neoplasias",
+                                    "edited": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "096",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "0AU",
+                                            "sub": [],
+                                            "desc": "Concepções pré-mendelianas",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Transmissão de características",
+                                    "edited": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "08Y",
+                                    "sub": [],
+                                    "desc": "Funcionamento do corpo humano",
+                                    "edited": false,
+                                    "rate": null
+                                }
+                            ],
+                            "desc": "Genética",
+                            "edited": false,
+                            "rate": 0
+                        },
+                        {
+                            "edit": false,
+                            "studied": false,
+                            "newElement": true,
+                            "$$hashKey": "05Q",
+                            "sub": [
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "07H",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "09F",
+                                            "sub": [],
+                                            "desc": "Biotecnologia e sustentabilidade",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "09A",
+                                            "sub": [],
+                                            "desc": "Aspectos éticos relacionados",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "08G",
+                                            "sub": [],
+                                            "desc": "Componentes biológicos",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "08B",
+                                            "sub": [],
+                                            "desc": "Fármacos",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "086",
+                                            "sub": [],
+                                            "desc": "Produção de alimentos",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Biotecnologia",
+                                    "edited": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "083",
+                                    "sub": [],
+                                    "desc": "Origem e evolução",
+                                    "edited": false,
+                                    "rate": null
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "07O",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "07X",
+                                            "sub": [],
+                                            "desc": "Animais",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "07T",
+                                            "sub": [],
+                                            "desc": "Vegetais",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Tecidos",
+                                    "edited": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "079",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "08L",
+                                            "sub": [
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "newElement": true,
+                                                    "$$hashKey": "095",
+                                                    "sub": [],
+                                                    "desc": "Identificação de indivíduos",
+                                                    "edited": false,
+                                                    "rate": null
+                                                },
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "newElement": true,
+                                                    "$$hashKey": "090",
+                                                    "sub": [],
+                                                    "desc": "Investigação criminal",
+                                                    "edited": false,
+                                                    "rate": null
+                                                },
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "newElement": true,
+                                                    "$$hashKey": "08V",
+                                                    "sub": [],
+                                                    "desc": "Determinação de paternidade",
+                                                    "edited": false,
+                                                    "rate": null
+                                                },
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "newElement": true,
+                                                    "$$hashKey": "08Q",
+                                                    "sub": [],
+                                                    "desc": "Investigações científicas",
+                                                    "edited": false,
+                                                    "rate": null
+                                                }
+                                            ],
+                                            "desc": "Tecnologias relacionadas",
+                                            "edited": false,
+                                            "rate": 0
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "081",
+                                            "sub": [],
+                                            "desc": "Síntese protéica",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "07W",
+                                            "sub": [],
+                                            "desc": "Clonagem",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "08T",
+                                            "sub": [],
+                                            "desc": "Tecnologia do DNA recombinante",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "08F",
+                                            "sub": [],
+                                            "desc": "Codificação da informação genética",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "old_desc": "Codificação da informação genética",
+                                    "desc": "DNA",
+                                    "edited": true,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "06L",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "06V",
+                                            "sub": [
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "newElement": true,
+                                                    "$$hashKey": "078",
+                                                    "sub": [],
+                                                    "desc": "Fotossíntese",
+                                                    "edited": false,
+                                                    "rate": null
+                                                },
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "newElement": true,
+                                                    "$$hashKey": "074",
+                                                    "sub": [],
+                                                    "desc": "Respiração",
+                                                    "edited": false,
+                                                    "rate": null
+                                                }
+                                            ],
+                                            "desc": "Metabolismo energético",
+                                            "edited": false,
+                                            "rate": 0
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "06Q",
+                                            "sub": [],
+                                            "desc": "Aspectos gerais",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Metabolismo",
+                                    "edited": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "065",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "09O",
+                                            "sub": [],
+                                            "desc": "Mitose",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "09K",
+                                            "sub": [],
+                                            "desc": "Meiosa",
+                                            "edited": false,
+                                            "rate": null
+                                        }
+                                    ],
+                                    "desc": "Divisão celular",
+                                    "edited": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "newElement": true,
+                                    "$$hashKey": "061",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "061",
+                                            "sub": [],
+                                            "desc": "Aspecto Bioquímico",
+                                            "edited": false,
+                                            "rate": null
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "newElement": true,
+                                            "$$hashKey": "05W",
+                                            "sub": [
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "newElement": true,
+                                                    "$$hashKey": "06E",
+                                                    "sub": [],
+                                                    "desc": "Citoplasma",
+                                                    "edited": false,
+                                                    "rate": null
+                                                },
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "newElement": true,
+                                                    "$$hashKey": "06A",
+                                                    "sub": [],
+                                                    "desc": "Membrana",
+                                                    "edited": false,
+                                                    "rate": null
+                                                },
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "newElement": true,
+                                                    "$$hashKey": "066",
+                                                    "sub": [],
+                                                    "desc": "Núcleo",
+                                                    "edited": false,
+                                                    "rate": null
+                                                }
+                                            ],
+                                            "desc": "Fisiologia",
+                                            "edited": false,
+                                            "rate": 0
+                                        }
+                                    ],
+                                    "desc": "Estrutura celular",
+                                    "edited": false,
+                                    "rate": 0
+                                }
+                            ],
+                            "old_desc": "Célula",
+                            "desc": "Célula",
+                            "edited": false,
+                            "rate": 0
+                        }
+                    ],
+                    "$$hashKey": "00M",
+                    "studied": false,
+                    "rate": 0
+                }
+            ],
+            "$$hashKey": "005",
+            "search": false,
+            "color": "#0B8AFF"
+        },
+        {
+            "name": "Matemática",
+            "sub" : [
+            	{
+            		"desc" : "Matemática"
+            	}
+            ],
+            "$$hashKey": "006",
+            "search": false,
+            "color": "#313DCF"
+        },
+        {
+            "name": "Linguagens",
+            "sub" : [
+            	{
+            		"desc" : "Linguagens"
+            	}
+            ],
+            "$$hashKey": "007",
+            "search": false,
+            "color": "#0C6AF6"
+        }
+    ]
 }
