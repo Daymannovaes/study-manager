@@ -60,8 +60,7 @@
                     ],
                     "$$hashKey": "00C",
                     "studied": false,
-                    "rate": 0,
-                    "hideSubs": false
+                    "rate": 0
                 },
                 {
                     "desc": "Sociedade e política",
@@ -253,8 +252,7 @@
                     ],
                     "$$hashKey": "00D",
                     "studied": false,
-                    "rate": 0,
-                    "hideSubs": true
+                    "rate": 0
                 },
                 {
                     "desc": "Estruturas produtivas",
@@ -376,8 +374,7 @@
                     ],
                     "$$hashKey": "00E",
                     "studied": false,
-                    "rate": 0,
-                    "hideSubs": true
+                    "rate": 0
                 },
                 {
                     "desc": "O homem e o meio ambiente",
@@ -477,8 +474,7 @@
                     ],
                     "$$hashKey": "00F",
                     "studied": false,
-                    "rate": 0,
-                    "hideSubs": true
+                    "rate": 0
                 },
                 {
                     "desc": "Representação espacial",
@@ -510,17 +506,13 @@
                     ],
                     "$$hashKey": "00G",
                     "studied": false,
-                    "rate": 0,
-                    "hideSubs": true
+                    "rate": 0
                 }
             ],
             "$$hashKey": "004",
-            "search": false,
             "color1": "#0063FA",
             "color2": "#0056D8",
-            "color": "#1733FF",
-            "referenceClass": "reference-title",
-            "show": "reference-content-container-false"
+            "color": "#1733FF"
         },
         {
             "name": "Ciências da Natureza",
@@ -603,8 +595,7 @@
                                     ],
                                     "rate": 0,
                                     "desc": "Aspectos sociais da biologia",
-                                    "edited": false,
-                                    "hideSubs": true
+                                    "edited": false
                                 },
                                 {
                                     "edit": false,
@@ -665,8 +656,7 @@
                                     ],
                                     "rate": 0,
                                     "desc": "Principais doenças que afetam o Brasil",
-                                    "edited": false,
-                                    "hideSubs": true
+                                    "edited": false
                                 },
                                 {
                                     "edit": false,
@@ -717,8 +707,7 @@
                                     ],
                                     "rate": 0,
                                     "desc": "Indicadores",
-                                    "edited": false,
-                                    "hideSubs": true
+                                    "edited": false
                                 },
                                 {
                                     "edit": false,
@@ -734,8 +723,7 @@
                             "rate": 0,
                             "old_desc": "Qualidade de vida",
                             "desc": "Qualidade de vida",
-                            "edited": false,
-                            "hideSubs": true
+                            "edited": false
                         },
                         {
                             "edit": false,
@@ -772,8 +760,7 @@
                                     ],
                                     "rate": 0,
                                     "desc": "Teorias da evolução",
-                                    "edited": false,
-                                    "hideSubs": true
+                                    "edited": false
                                 },
                                 {
                                     "edit": false,
@@ -810,14 +797,12 @@
                                             ],
                                             "rate": 0,
                                             "desc": "Impactos",
-                                            "edited": false,
-                                            "hideSubs": true
+                                            "edited": false
                                         }
                                     ],
                                     "rate": 0,
                                     "desc": "Seleção artificial",
-                                    "edited": false,
-                                    "hideSubs": true
+                                    "edited": false
                                 },
                                 {
                                     "edit": false,
@@ -858,8 +843,7 @@
                                     ],
                                     "rate": 0,
                                     "desc": "Hipóteses",
-                                    "edited": false,
-                                    "hideSubs": true
+                                    "edited": false
                                 },
                                 {
                                     "edit": false,
@@ -911,14 +895,12 @@
                                     "rate": 0,
                                     "old_desc": "Biologia como ciência",
                                     "desc": "Biologia como ciência",
-                                    "edited": false,
-                                    "hideSubs": true
+                                    "edited": false
                                 }
                             ],
                             "rate": 0,
                             "desc": "Origem e evolução da vida",
-                            "edited": false,
-                            "hideSubs": true
+                            "edited": false
                         },
                         {
                             "edit": false,
@@ -975,8 +957,7 @@
                                     ],
                                     "desc": "Legislação ambiental",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -1057,8 +1038,7 @@
                                     ],
                                     "desc": "Problemas ambientais",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -1090,8 +1070,7 @@
                                     ],
                                     "desc": "Biogeografia",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -1112,8 +1091,7 @@
                                     ],
                                     "desc": "Ciclos biogeoquímicos",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -1140,8 +1118,7 @@
                                             ],
                                             "desc": "Nicho ecológico",
                                             "edited": false,
-                                            "rate": 0,
-                                            "hideSubs": true
+                                            "rate": 0
                                         },
                                         {
                                             "edit": false,
@@ -1156,8 +1133,7 @@
                                     ],
                                     "desc": "Dinâmica das populações",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -1198,8 +1174,7 @@
                                     ],
                                     "desc": "Ecossistemas",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -1240,14 +1215,12 @@
                                     ],
                                     "desc": "Comunidade",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 }
                             ],
                             "desc": "Ecologia",
                             "edited": true,
-                            "rate": 0,
-                            "hideSubs": true
+                            "rate": 0
                         },
                         {
                             "edit": false,
@@ -1294,8 +1267,7 @@
                                     ],
                                     "desc": "Corpo humano",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -1326,8 +1298,7 @@
                                     ],
                                     "desc": "Funções vitais",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -1368,8 +1339,7 @@
                                     ],
                                     "desc": "Evolução",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -1420,8 +1390,7 @@
                                     ],
                                     "desc": "Níveis de organização",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -1452,14 +1421,12 @@
                                     ],
                                     "desc": "Tipo de alimentação",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 }
                             ],
                             "desc": "Identidade dos seres vivos",
                             "edited": false,
-                            "rate": 0,
-                            "hideSubs": true
+                            "rate": 0
                         },
                         {
                             "edit": false,
@@ -1496,8 +1463,7 @@
                                     ],
                                     "desc": "Diversidade da vida",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -1538,8 +1504,7 @@
                                     ],
                                     "desc": "Mutações",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -1590,8 +1555,7 @@
                                     ],
                                     "desc": "Sangue",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -1612,8 +1576,7 @@
                                     ],
                                     "desc": "Neoplasias",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -1634,8 +1597,7 @@
                                     ],
                                     "desc": "Transmissão de características",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -1650,8 +1612,7 @@
                             ],
                             "desc": "Genética",
                             "edited": false,
-                            "rate": 0,
-                            "hideSubs": true
+                            "rate": 0
                         },
                         {
                             "edit": false,
@@ -1718,8 +1679,7 @@
                                     ],
                                     "desc": "Biotecnologia",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -1760,8 +1720,7 @@
                                     ],
                                     "desc": "Tecidos",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -1818,8 +1777,7 @@
                                             ],
                                             "desc": "Tecnologias relacionadas",
                                             "edited": false,
-                                            "rate": 0,
-                                            "hideSubs": true
+                                            "rate": 0
                                         },
                                         {
                                             "edit": false,
@@ -1865,8 +1823,7 @@
                                     "old_desc": "Codificação da informação genética",
                                     "desc": "DNA",
                                     "edited": true,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -1903,8 +1860,7 @@
                                             ],
                                             "desc": "Metabolismo energético",
                                             "edited": false,
-                                            "rate": 0,
-                                            "hideSubs": true
+                                            "rate": 0
                                         },
                                         {
                                             "edit": false,
@@ -1919,8 +1875,7 @@
                                     ],
                                     "desc": "Metabolismo",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -1951,8 +1906,7 @@
                                     ],
                                     "desc": "Divisão celular",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 },
                                 {
                                     "edit": false,
@@ -2009,34 +1963,27 @@
                                             ],
                                             "desc": "Fisiologia",
                                             "edited": false,
-                                            "rate": 0,
-                                            "hideSubs": true
+                                            "rate": 0
                                         }
                                     ],
                                     "desc": "Estrutura celular",
                                     "edited": false,
-                                    "rate": 0,
-                                    "hideSubs": true
+                                    "rate": 0
                                 }
                             ],
                             "old_desc": "Célula",
                             "desc": "Célula",
                             "edited": false,
-                            "rate": 0,
-                            "hideSubs": true
+                            "rate": 0
                         }
                     ],
                     "$$hashKey": "00M",
                     "studied": false,
-                    "rate": 0,
-                    "hideSubs": true
+                    "rate": 0
                 }
             ],
             "$$hashKey": "005",
-            "search": true,
-            "color": "#0B8AFF",
-            "referenceClass": "reference-title-true",
-            "show": "reference-content-container-true"
+            "color": "#0B8AFF"
         },
         {
             "name": "Matemática",
@@ -2050,7 +1997,6 @@
                 }
             ],
             "$$hashKey": "006",
-            "search": false,
             "color": "#313DCF"
         },
         {
@@ -2065,7 +2011,6 @@
                 }
             ],
             "$$hashKey": "007",
-            "search": false,
             "color": "#0C6AF6"
         }
     ]

@@ -36,20 +36,23 @@
 			<div id="header">
 				<div class="container">
 					<div class="page-header">		
-						<h1> {{screenplay.name}} <small style="color:white"> {{screenplay.description}} </small></h1>
+						<h1> {{screenplay.name}} <small style="color:white"> {{screenplay.description}} </small> 
+
+							<button class="btn" onclick="if(confirm('deseja limpar suas alterações locais?')){localStorage.removeItem('screenplay');saveInLocalStorage=false;}">
+								Limpar
+							</button>
+						</h1>
 					</div>
 					<h2 style="display:inline">A ideia é simples,</h2> <h3>são apenas <strong>tópicos</strong>, onde a cada vez que você marcar <strong>"estudei"</strong>, uma barra de progresso indicará o quanto falta para concluir aquela etapa.</h3>
 					<p></p>
 					<p>Em poucos dias de estudo é fácil ver que a barra de progresso está quase completa. Foi tudo uma questão de organização, separando o edital em tópicos, conseguimos guiar nossos estudos, de forma que, em quanto mais tópicos destrincharmos, melhor definimos o que deve ser estudado e mais focado ficamos. Aproveite.<p>
+					<p>Clique nos tópicos para abrí-los e fecha-los.</p>
 
 					<div data-ng-hide=true>
 						<h3>@TODO</h3><h2>collapse all, expande all, reduce (to localstorage), cancelar ultima alteração, mover tópico (para cima e para baixo)</h2>
 						<p></p>
 					</div>
 
-					<button class="btn" onclick="if(confirm('deseja limpar suas alterações locais?')){localStorage.clear();saveInLocalStorage=false;}">
-						Limpar
-					</button>
 					<p><a href="site">Site do Enem</a></p>
 					<p><a href="site">Edital do Enem</a></p>
 					<p><a href="site">Contato</a></p>
@@ -64,7 +67,7 @@
 									<h3>{{reference.name}}</h3>
 
 									<div class="search-{{reference.search}}">
-										<input type="text"  class="form-control" placeholder="Não implementado" data-ng-click="toggleref(this)" data-ng-model="searchText" />
+										<input type="text"  class="form-control" placeholder="Pesquisa" data-ng-click="toggleref(this)" data-ng-model="searchText" />
 									</div>
 								</div>
 								<div class="something">
