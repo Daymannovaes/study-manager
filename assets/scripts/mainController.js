@@ -7,17 +7,38 @@ SPapp.controller("mainController",
 	
 	function($scope, $http, $timeout) {
 
-	if(localStorage.getItem("screenplay")) {
-		$scope.screenplay = JSON.parse(localStorage.getItem("screenplay"));
-		screenplay = $scope.screenplay;
+	function load() {
+		var old_revision,
+			new_revision;
+
+		$http.get("json/revision.json").success(function(data) {
+	        new_revision = data.revision;
+    	}).then(function() {
+			old_revision = localStorage.getItem("screenplay.revision") || 0;
+				
+			
+			if(old_revision != new_revision) {
+				if(confirm("Há novo conteúdo disponível, deseja manter seus dados ou sobreescreve-los? \nSua revisão: " + old_revision + "\nNova revisão: " + new_revision)) {
+					saveInLocalStorage = false;
+					location.reload();
+	    			localStorage.setItem("screenplay.revision", new_revision);
+				}
+			}
+		});
+
+		if(localStorage.getItem("screenplay")) {
+			$scope.screenplay = JSON.parse(localStorage.getItem("screenplay"));
+			screenplay = $scope.screenplay;
+		}
+	    else {
+	    	$http.get("json/screenplay.json").success(function(data) {
+		        $scope.screenplay = data;
+		        localStorage.setItem("screenplay", JSON.stringify(data));
+		        screenplay = data;
+	    	});
+	    }
 	}
-    else {
-    	$http.get("json/screenplay.json").success(function(data) {
-	        $scope.screenplay = data;
-	        localStorage.setItem("screenplay", JSON.stringify(data));
-	        screenplay = data;
-    	});
-    }
+	load();
 
     $scope.template = {};
 
