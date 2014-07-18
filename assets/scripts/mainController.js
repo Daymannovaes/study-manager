@@ -18,7 +18,7 @@ SPapp.controller("mainController",
 				
 			
 			if(old_revision != new_revision) {
-				if(confirm("Há novo conteúdo disponível, deseja manter seus dados ou sobreescreve-los? \nSua revisão: " + old_revision + "\nNova revisão: " + new_revision)) {
+				if(confirm("Há novo conteúdo disponível, deseja sobreescrever seus dados? \nSua revisão: " + old_revision + "\nNova revisão: " + new_revision)) {
 					saveInLocalStorage = false;
 					location.reload();
 	    			localStorage.setItem("screenplay.revision", new_revision);
