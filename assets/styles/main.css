@@ -225,7 +225,7 @@ span.sub-desc:hover {
 	font-weight: normal;
 }
 
-.searchfalse, .search {
+.search-false, .search- {
 	display: none;
 	width: 0;
 	height: 0;
@@ -234,7 +234,7 @@ span.sub-desc:hover {
 
 	opacity: 0;
 }
-.searchtrue {
+.search-true {
 	opacity: 1;
 	transition: 2000ms opacity;
 	display: inline;

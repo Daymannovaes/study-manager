@@ -36,8 +36,10 @@
 	.reference-title-true {
 		padding: 45px;
 	}
-	.reference-content {
+	.reference-content li {
 		font-size: 1.5em !important;
+		padding-bottom: 20px;
+		padding-top: 20px;	
 	}
 }
 

@@ -246,6 +246,7 @@ SPapp.controller("mainController",
 window.onbeforeunload = function() {
 	removeProp(screenplay, "element");
 	removeProp(screenplay, "hideSubs");
+	removeProp(screenplay, "search");
 	desactivateReferences(screenplay);
 
 	if(saveInLocalStorage)

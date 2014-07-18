@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>ENEM screenplay</title>
+	<title>Bússola, o edital a seu favor</title>
 	<link rel="stylesheet" type="text/css" href="assets/libs/bootstrap/styles/bootstrap.css">
 	
 	<link rel="stylesheet" type="text/css" href="assets/styles/main.css">
@@ -21,6 +21,8 @@
 	<script type="text/javascript" src="assets/scripts/mainController.js"></script>
 
 	<script type="text/javascript" src="assets/scripts/directives/subs.js"></script>
+
+	<script type="text/javascript" src="assets/scripts/filter.js"></script>
 
 
 </head>
@@ -45,7 +47,7 @@
 						<p></p>
 					</div>
 
-					<button class="btn" onclick="if(confirm()){localStorage.clear();saveInLocalStorage=false;}">
+					<button class="btn" onclick="if(confirm('deseja limpar suas alterações locais?')){localStorage.clear();saveInLocalStorage=false;}">
 						Limpar
 					</button>
 					<p><a href="site">Site do Enem</a></p>
@@ -60,6 +62,10 @@
 								<div ng-class="reference.referenceClass" class="reference-title" data-ng-click="toggleref(this)"
 								style="background:{{reference.color}}">
 									<h3>{{reference.name}}</h3>
+
+									<div class="search-{{reference.search}}">
+										<input type="text"  class="form-control" placeholder="Não implementado" data-ng-click="toggleref(this)" data-ng-model="searchText" />
+									</div>
 								</div>
 								<div class="something">
 									<div class="reference-content-container"  data-ng-class="reference.show">								
