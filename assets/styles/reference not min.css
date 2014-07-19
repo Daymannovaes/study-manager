@@ -1,0 +1,112 @@
+.reference-containerfalse, .reference-container {
+	position: fixed;
+
+	width: 100%;
+	
+	display: table;
+
+
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.reference-containertrue {
+	transition: 400ms all;
+	position: fixed;
+	
+	bottom:0;
+	right: 0;
+	left: 0;
+
+	z-index: 100;
+	
+}
+.reference-title {
+	transition: 400ms all;
+	top:500px;
+	padding: 35px;
+	
+}
+
+.reference-title-true {
+
+	transition: 400ms all;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	right: 0;
+	z-index: 30;
+	padding: 15px;
+	
+}
+
+@media screen and (orientation:portrait) {
+	.reference-title {
+		padding: 45px;
+	}
+	.reference-title-true {
+		padding: 55px;
+	}
+	.reference-content li {
+		font-size: 1.5em !important;
+		padding-bottom: 2%;
+		padding-top: 20px;	
+	}
+	#loading {
+		font-size: 3em;
+	}
+}
+
+
+.reference {
+	box-shadow: 0px 10px 24px 1px black;
+}
+
+.something {
+	position: relative;
+}
+
+.reference-content-container-true {
+	transition: 400ms all;
+	position: fixed;
+
+	height: 100% !important;
+
+	padding: 20px;
+	padding-left: 50px;
+
+	top: 50px;
+	right: 0;
+	left: 0;
+	right: 0;
+	padding-bottom: 60px;
+
+	overflow: auto;
+	z-index: 2;
+	
+	background-color: #E2E3F1;
+}
+.reference-content-container, .reference-content-container-false {
+	transition: 200ms all;
+	position: fixed;
+
+	height: 0px;
+	width: 100%;
+	top:50px;
+
+
+	
+	overflow: auto;
+	
+	
+	background-color: #E2E3F1;
+}
+.reference:hover {
+	border-left: 8px solid blue;
+
+	box-shadow: 0px 6px 24px 1px black;
+	-webkit-box-shadow: 0px 6px 24px 1px black;
+	-moz-box-shadow: 0px 6px 24px 1px black;
+}

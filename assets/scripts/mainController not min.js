@@ -2,6 +2,7 @@ var screenplay;
 var saveInLocalStorage = true;
 var items = -4;
 var loaded = 0;
+var showModal = true;
 
 SPapp.controller("mainController",
 	
@@ -19,6 +20,8 @@ SPapp.controller("mainController",
 			old_revision = localStorage.getItem("screenplay.revision");
 				
 			if(old_revision) {
+				showModal = false;
+
 				if(old_revision != new_revision) {
 					if(confirm("Há novo conteúdo disponível, deseja sobreescrever seus dados? \nSua revisão: " + old_revision + "\nNova revisão: " + new_revision)) {
 						saveInLocalStorage = false;
@@ -27,7 +30,7 @@ SPapp.controller("mainController",
 					}
 				}
 			}
-			else
+			else 
     			localStorage.setItem("screenplay.revision", new_revision);
 				
 		});
@@ -162,8 +165,18 @@ SPapp.controller("mainController",
 		$("#loading-progress").width(loaded/items*100 + "%");
 	
 		if(loaded == items) {
-			$("#loading").css("display", "none");
-			$("#loading-progress").css("display", "none");
+			setTimeout(function() {
+				$("#loading").animate({opacity: 0}, 300);
+				$("#loading-progress").animate({left:2000}, 500);
+				setTimeout(function() {
+					$("#loading").css("display", "none");
+					$("#loading-progress").css("display", "none");
+
+					if(showModal)
+						$('#tutorial').modal('show');
+				}, 600);
+			},100);
+		
 		}
 	}
 
@@ -189,6 +202,8 @@ SPapp.controller("mainController",
 	}
 
 	$scope.remove = function(parent, index) {
+		if(parent.sub[index].desc && !confirm("Deseja realmente excluir o tópico \""+parent.sub[index].desc+"\""))
+			return;
 		parent.sub.splice(index, 1);
 
 		$scope.studied.selfUpdate(parent);
