@@ -1,6 +1,6 @@
 var screenplay;
 var saveInLocalStorage = true;
-var items = -4;
+var items = 0;
 var loaded = 0;
 var showModal = true;
 
@@ -164,7 +164,7 @@ SPapp.controller("mainController",
 
 		$("#loading-progress").width(loaded/items*100 + "%");
 	
-		if(loaded == items) {
+		if(loaded == (items-4)) {
 			setTimeout(function() {
 				$("#loading").animate({opacity: 0}, 300);
 				$("#loading-progress").animate({left:2000}, 500);

@@ -57,6 +57,9 @@
 	#loading {
 		font-size: 3em;
 	}
+	.reference-content-container {
+		top: 130px !important;
+	}
 }
 
 
