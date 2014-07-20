@@ -1219,7 +1219,7 @@
                                 }
                             ],
                             "desc": "Ecologia",
-                            "edited": true,
+                            "edited": false,
                             "rate": 0
                         },
                         {
@@ -1822,7 +1822,7 @@
                                     ],
                                     "old_desc": "Codificação da informação genética",
                                     "desc": "DNA",
-                                    "edited": true,
+                                    "edited": false,
                                     "rate": 0
                                 },
                                 {
@@ -1978,6 +1978,371 @@
                         }
                     ],
                     "$$hashKey": "00M",
+                    "studied": false,
+                    "rate": 0
+                },
+                {
+                    "desc": "Física",
+                    "sub": [],
+                    "$$hashKey": "00C",
+                    "studied": false,
+                    "rate": null
+                },
+                {
+                    "desc": "Química",
+                    "sub": [
+                        {
+                            "edit": false,
+                            "studied": false,
+                            "$$hashKey": "0L3",
+                            "sub": [
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "$$hashKey": "0LC",
+                                    "sub": [],
+                                    "rate": null,
+                                    "desc": "Propriedades",
+                                    "edited": false
+                                },
+                                {
+                                    "edit": false,
+                                    "studied": false,
+                                    "$$hashKey": "0L8",
+                                    "sub": [],
+                                    "rate": null,
+                                    "desc": "Usos",
+                                    "edited": false
+                                }
+                            ],
+                            "rate": 0,
+                            "desc": "Materiais",
+                            "edited": false
+                        },
+                        {
+                            "edit": false,
+                            "studied": false,
+                            "$$hashKey": "0H8",
+                            "sub": [
+                                {
+                                    "desc": "Conceitos",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "$$hashKey": "0L1",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Reações químicas",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "$$hashKey": "0KW",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Tabela periódica",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "$$hashKey": "0JE",
+                                            "sub": [
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "$$hashKey": "0JO",
+                                                    "sub": [
+                                                        {
+                                                            "edit": false,
+                                                            "studied": false,
+                                                            "$$hashKey": "0KO",
+                                                            "sub": [],
+                                                            "rate": null,
+                                                            "desc": "Dalton",
+                                                            "edited": false
+                                                        },
+                                                        {
+                                                            "edit": false,
+                                                            "studied": false,
+                                                            "$$hashKey": "0KK",
+                                                            "sub": [],
+                                                            "rate": null,
+                                                            "desc": "Thomson",
+                                                            "edited": false
+                                                        },
+                                                        {
+                                                            "edit": false,
+                                                            "studied": false,
+                                                            "$$hashKey": "0KG",
+                                                            "sub": [],
+                                                            "rate": null,
+                                                            "desc": "Rutherford",
+                                                            "edited": false
+                                                        },
+                                                        {
+                                                            "edit": false,
+                                                            "studied": false,
+                                                            "$$hashKey": "0KC",
+                                                            "sub": [],
+                                                            "rate": null,
+                                                            "desc": "Rutherford-Bohr",
+                                                            "edited": false
+                                                        }
+                                                    ],
+                                                    "rate": 0,
+                                                    "desc": "Modelos atômicos",
+                                                    "edited": false
+                                                },
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "$$hashKey": "0JJ",
+                                                    "sub": [],
+                                                    "rate": null,
+                                                    "desc": "Estrutura atômica",
+                                                    "edited": false
+                                                }
+                                            ],
+                                            "rate": 0,
+                                            "desc": "Átomos",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "$$hashKey": "0J9",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Conceito de molécula",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "$$hashKey": "0II",
+                                            "sub": [
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "$$hashKey": "0IN",
+                                                    "sub": [],
+                                                    "rate": null,
+                                                    "desc": "Princípio de Avogadro",
+                                                    "edited": false
+                                                }
+                                            ],
+                                            "rate": 0,
+                                            "desc": "Massa molar",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "$$hashKey": "0HN",
+                                            "sub": [
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "$$hashKey": "0J4",
+                                                    "sub": [],
+                                                    "rate": null,
+                                                    "desc": "Misturas gasosas",
+                                                    "edited": false
+                                                },
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "$$hashKey": "0IZ",
+                                                    "sub": [],
+                                                    "rate": null,
+                                                    "desc": "Teoria cinética",
+                                                    "edited": false
+                                                },
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "$$hashKey": "0IU",
+                                                    "sub": [],
+                                                    "rate": null,
+                                                    "desc": "Volume molar",
+                                                    "edited": false
+                                                },
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "$$hashKey": "0HX",
+                                                    "sub": [],
+                                                    "rate": null,
+                                                    "desc": "Equação geral dos gases ideais",
+                                                    "edited": false
+                                                },
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "$$hashKey": "0HS",
+                                                    "sub": [],
+                                                    "rate": null,
+                                                    "desc": "Lei dos gases",
+                                                    "edited": false
+                                                }
+                                            ],
+                                            "rate": 0,
+                                            "old_desc": "Sistema gasoso",
+                                            "desc": "Sistema gasoso",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "$$hashKey": "0HI",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Interpretando",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "$$hashKey": "0HD",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Evidências",
+                                            "edited": false
+                                        }
+                                    ],
+                                    "$$hashKey": "05K",
+                                    "studied": false,
+                                    "rate": 0
+                                },
+                                {
+                                    "desc": "Representação",
+                                    "sub": [
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "$$hashKey": "0KY",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Cálculos estequiométricos",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "$$hashKey": "0JU",
+                                            "sub": [
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "$$hashKey": "0KF",
+                                                    "sub": [],
+                                                    "rate": null,
+                                                    "desc": "Massa",
+                                                    "edited": false
+                                                },
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "$$hashKey": "0KB",
+                                                    "sub": [],
+                                                    "rate": null,
+                                                    "desc": "Volume",
+                                                    "edited": false
+                                                },
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "$$hashKey": "0K7",
+                                                    "sub": [],
+                                                    "rate": null,
+                                                    "desc": "Mol",
+                                                    "edited": false
+                                                },
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "$$hashKey": "0K3",
+                                                    "sub": [],
+                                                    "rate": null,
+                                                    "desc": "Massa molar",
+                                                    "edited": false
+                                                },
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "$$hashKey": "0JZ",
+                                                    "sub": [],
+                                                    "rate": null,
+                                                    "desc": "Constante de Avogadro",
+                                                    "edited": false
+                                                }
+                                            ],
+                                            "rate": 0,
+                                            "old_desc": "Grandezas químicas",
+                                            "desc": "Grandezas químicas",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "$$hashKey": "0JK",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Leis ponderais das reações",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "$$hashKey": "0JF",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Aspecto quantitativo das transformações",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "$$hashKey": "0JA",
+                                            "sub": [],
+                                            "rate": null,
+                                            "desc": "Balanceamento de equações",
+                                            "edited": false
+                                        },
+                                        {
+                                            "edit": false,
+                                            "studied": false,
+                                            "$$hashKey": "0J5",
+                                            "sub": [
+                                                {
+                                                    "edit": false,
+                                                    "studied": false,
+                                                    "$$hashKey": "0JP",
+                                                    "sub": [],
+                                                    "rate": null,
+                                                    "desc": "Determinação",
+                                                    "edited": false
+                                                }
+                                            ],
+                                            "rate": 0,
+                                            "desc": "Fórmulas químicas",
+                                            "edited": false
+                                        }
+                                    ],
+                                    "$$hashKey": "05L",
+                                    "studied": false,
+                                    "rate": 0
+                                }
+                            ],
+                            "rate": 0,
+                            "desc": "Transformações químicas",
+                            "edited": false
+                        }
+                    ],
+                    "$$hashKey": "00D",
                     "studied": false,
                     "rate": 0
                 }
