@@ -137,14 +137,10 @@ SPapp.controller("mainController",
 		if(!sub.sub.sub)
 			sub.sub.sub = [];
 
-		setTimeout(function() {
-			$("#loading").animate({opacity: 0}, 300);
-			setTimeout(function() {
-				$("#loading").css("display", "none");
-				if(showModal == "true")
-					$('#tutorial').modal('show');
-			}, 600);
-		},100);
+		$("#loading").css("display", "none");
+		if(showModal == "true")
+			$('#tutorial').modal('show');
+			showModal = "false";
 
 	}
 
