@@ -13,7 +13,7 @@
 		</button>
 
 		<div class="sub-info">
-			<paper-checkbox  class="{{$id}}" data-ng-model="sub.studied" data-ng-click="toggle(sub);studied.update(this,$event);"></paper-checkbox>
+			<input class="notcheck" type="checkbox" data-ng-model="sub.studied" data-ng-click="toggle(sub)" data-ng-change="studied.update(this)"/>
 			<label class="child-number">
 				{{sub.sub.length}}
 			</label>

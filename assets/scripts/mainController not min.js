@@ -1,8 +1,6 @@
 var screenplay;
 var saveInLocalStorage = true;
-var items = 0;
-var loaded = 0;
-var showModal = true;
+var showModal = localStorage.getItem("screenplay.showModal") != undefined ? localStorage.getItem("screenplay.showModal") : "true";
 
 SPapp.controller("mainController",
 	
@@ -16,17 +14,19 @@ SPapp.controller("mainController",
 
 		$http.get("json/revision.json").success(function(data) {
 	        new_revision = data.revision;
+	        $scope.revision = new_revision;
     	}).then(function() {
 			old_revision = localStorage.getItem("screenplay.revision");
 				
 			if(old_revision) {
-				showModal = false;
+    			localStorage.setItem("screenplay.showModal", false);
 
 				if(old_revision != new_revision) {
 					if(confirm("Há novo conteúdo disponível, deseja sobreescrever seus dados? \nSua revisão: " + old_revision + "\nNova revisão: " + new_revision)) {
 						saveInLocalStorage = false;
 						localStorage.removeItem('screenplay');
 		    			localStorage.setItem("screenplay.revision", new_revision);
+		    			localStorage.setItem("screenplay.showModal", true);
 						location.reload();
 					}
 				}
@@ -39,29 +39,18 @@ SPapp.controller("mainController",
 		if(localStorage.getItem("screenplay")) {
 			$scope.screenplay = JSON.parse(localStorage.getItem("screenplay"));
 			screenplay = $scope.screenplay;
-			$scope.countItens($scope.screenplay.references);
 		}
 	    else {
 	    	$http.get("json/screenplay.json").success(function(data) {
 		        $scope.screenplay = data;
 		        localStorage.setItem("screenplay", JSON.stringify(data));
 		        screenplay = data;
-				$scope.countItens($scope.screenplay.references);
 	    	});
 	    }
 	    
 	}
 
     $scope.template = {};
-
-    $scope.countItens = function(sub) {
-    	for(index in sub) {
-    		items++;
-
-    		if(sub[index].sub)
-    			$scope.countItens(sub[index].sub);
-    	}
-    }
 
 	$scope.template.children = function(sub) {
 		return sub.sub ? "templates/subs.html" : ""; 
@@ -148,37 +137,15 @@ SPapp.controller("mainController",
 		if(!sub.sub.sub)
 			sub.sub.sub = [];
 
-		$timeout(function() {
-			$scope.bindEventToPolymer(sub);
-		},50);
-	}
-
-	$scope.bindEventToPolymer = function(sub) {
-		var element = $("." + sub.$id);
-
-		element[0].bind('checked', new PathObserver(sub.sub, 'studied'));
-
-		sub.sub.element = element;
-
-		loaded++;
-		$scope.percentLoaded = "Carregando " + Math.round(loaded/items*100) + "%";
-
-		$("#loading-progress").width(loaded/items*100 + "%");
-	
-		if(loaded == (items-4)) {
+		setTimeout(function() {
+			$("#loading").animate({opacity: 0}, 300);
 			setTimeout(function() {
-				$("#loading").animate({opacity: 0}, 300);
-				$("#loading-progress").animate({left:2000}, 500);
-				setTimeout(function() {
-					$("#loading").css("display", "none");
-					$("#loading-progress").css("display", "none");
+				$("#loading").css("display", "none");
+				if(showModal == "true")
+					$('#tutorial').modal('show');
+			}, 600);
+		},100);
 
-					if(showModal)
-						$('#tutorial').modal('show');
-				}, 600);
-			},100);
-		
-		}
 	}
 
 	$scope.defineToggle = function(sub) {
@@ -236,16 +203,9 @@ SPapp.controller("mainController",
 		var timer;
 		sub = $this.sub;
 
-		sub.studied = !sub.studied;
-
 		$scope.studied.updateParents($this.$parent);
 		$scope.studied.updateChildren(sub);
 
-		sub.studied = !sub.studied;
-		
-		timer = $timeout(function() {
-			sub.studied = sub.element.prop("checked");
-		}, 200);
 	}
 	$scope.studied.updateChildren = function(sub) {
 		for(index in sub.sub) {
