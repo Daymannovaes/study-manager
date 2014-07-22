@@ -26,13 +26,9 @@
 	top: 0px;
 
 	padding-bottom: 20px;
-	
-	border-top: 1px dashed #1164DF;
-	border-bottom: 1px dashed #1164DF;
-
 
 	z-index: 1;
-	background-color: #0A0264;
+	background-color: #292136;
 }
 #top ul {
 	list-style: none;
@@ -84,13 +80,11 @@
 	padding-top: 20px;
 	padding-bottom: 0px;
 
+	color: #024873;
 
-	background: -webkit-linear-gradient(#1164DF 10%, #0066FF 30%); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#1164DF 10%, #0066FF 30%); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#1164DF 10%, #0066FF 30%); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#1164DF 10%,#0066FF 30%);
+
+	background-color: #F2F2F2;
 }
-
 #content {
 	min-height: 100%;
 
@@ -186,15 +180,15 @@ li.sub-li {
 li.sub-li:hover {
 	background-color: #CACCE6;
 
-	border-left: 1px dashed blue;
-	border-right: 1px dashed blue;
+	border-left: 1px dashed #00ff00;
+	border-right: 1px dashed #00ff00;
 }
 
 li.sub-li:focus {
 	background-color: #CACCE6;
 
-	border-left: 1px dashed blue;
-	border-right: 1px dashed blue;
+	border-left: 1px dashed #00ff00;
+	border-right: 1px dashed #00ff00;
 	
 	outline-color: transparent;
 }
@@ -210,8 +204,8 @@ h3 {
 div.sub-li:hover {
 	background-color: #CACCE6;
 
-	border-left: 4px solid blue;
-	border-right: 2px solid blue;
+	border-left: 4px solid #00ff00;
+	border-right: 2px solid #00ff00;
 }
 div.sub-li-studied:hover {
 	background-color: #CACCE6;
