@@ -84,6 +84,7 @@
 
 
 	background-color: #F2F2F2;
+
 }
 #content {
 	min-height: 100%;
@@ -103,8 +104,6 @@
 	right: 5px;
 }
 
-div.reference {
-}
 
 div.reference button {
 	height: 42px;
