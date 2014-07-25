@@ -25,7 +25,7 @@
 .reference-title {
 	transition: 400ms all;
 	top:500px;
-	padding: 35px;
+	padding: 2em;
 
 	color: #ddd;
 	
@@ -44,6 +44,8 @@
 	right: 0;
 	z-index: 30;
 	padding: 15px;
+
+	color: #eee;
 	
 }
 .reference-title-true:hover {
@@ -53,12 +55,13 @@
 	
 }
 .reference-title-true:hover:before {
-	content: "voltar";
+	content: "\25C0  ";
 }
 
 @media screen and (orientation:portrait) {
 	.reference-title {
-		padding: 45px;
+		padding: 20px;
+		padding-bottom: 10%;
 	}
 	.reference-title-true {
 		padding: 55px;
@@ -73,6 +76,10 @@
 	}
 	.reference-content-container {
 		top: 130px !important;
+	}
+
+	body {
+		font-size: 2.5em !important;
 	}
 }
 
