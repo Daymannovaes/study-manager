@@ -1,16 +1,27 @@
 <ul data-ng-repeat="sub in sub.sub" data-ng-init="init(this)">
-	<li data-ng-class="subClass(sub)" data-ng-click="toggle(sub)" tabindex="2">
+	<li data-ng-class="subClass(sub)" data-ng-click="toggle(sub)" tabindex="2" style="">
 		
 		
 		<span data-ng-include="template.edit(sub)">
-		</span>
-
-		<button data-ng-click="add(sub)">
-			+
+		</span>	
+		
+		<button data-ng-click="toggle(sub)">			
+			<span class="glyphicon glyphicon-chevron-right"></span>
 		</button>
-		<button data-ng-click="remove(this.$parent.$parent.sub, $index)">
-			-
-		</button>
+		<div class="actions" style="display:inline">
+			<button data-ng-click="add(sub)">
+				<span class="glyphicon glyphicon-plus"></span>
+			</button>
+			<button data-ng-click="remove(this.$parent.$parent.sub, $index)">
+				<span class="glyphicon glyphicon-remove"></span>
+			</button>
+			<button data-ng-click="upItem(this.$parent.$parent, $index)">
+				<span class="glyphicon glyphicon-chevron-up"></span>
+			</button>
+			<button data-ng-click="downItem(this.$parent.$parent, $index)">
+				<span class="glyphicon glyphicon-chevron-down"></span>
+			</button>
+		</div>
 
 		<div class="sub-info">
 			<input class="notcheck" type="checkbox" data-ng-model="sub.studied" data-ng-click="toggle(sub)" data-ng-change="studied.update(this)"/>

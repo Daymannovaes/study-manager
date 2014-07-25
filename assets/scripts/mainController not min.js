@@ -129,8 +129,6 @@ SPapp.controller("mainController",
 	}
 
 	$scope.init = function(sub) {
-		$scope.toggle(sub.sub);
-
 		if(!sub.sub.studied)
 			sub.sub.studied = false;
 
@@ -138,21 +136,61 @@ SPapp.controller("mainController",
 			sub.sub.sub = [];
 
 		$("#loading").css("display", "none");
-		if(showModal == "true")
+		if(showModal == "true") {
 			$('#tutorial').modal('show');
 			showModal = "false";
+		}
 
+	}
+
+	$scope.upItem = function($parent, $index) {
+		if($index == 0) {
+			if($parent.$parent.sub)
+				$scope.upLevelItem($parent.$parent, $parent.sub, $index);
+		}
+		else
+			$scope.changePosition($parent, $index-1, $index);
+	}
+	$scope.downItem = function($parent, $index) {
+		if($index == $parent.sub.sub.length-1) {
+			console.log('finish');
+			return;
+		}
+
+		$scope.changePosition($parent, $index+1, $index)
+	}
+	$scope.changePosition = function($parent, idFrom, idTo) {
+		parent = $parent.sub.sub;
+
+		var cloneTo = angular.copy(parent[idTo]);
+		var cloneFrom = angular.copy(parent[idFrom]);
+
+		parent[idTo] = cloneFrom;
+		parent[idFrom] = cloneTo;
+	}
+	$scope.upLevelItem = function($parent, oldParent, $index) {
+		var item = angular.copy(oldParent.sub[$index]);
+		oldParent.sub.splice($index, 1);
+
+		var newParentArray = $parent.sub.sub;
+		var oldParentIndex = newParentArray.indexOf(oldParent);
+
+		newParentArray.splice(oldParentIndex, 0, item)
 	}
 
 	$scope.defineToggle = function(sub) {
-		if(sub.sub && sub.sub[0])
+		if(sub.sub && sub.sub[0]) {
 			sub.hideSubs = false;
-		else
+			sub.templateChildren = "templates/subs.html";
+		}
+		else {
 			delete sub.hideSubs;
+			sub.templateChildren = "";
+		}
 	}
 
 	$scope.add = function(sub) {
-		if(!sub.sub || !sub.sub[0]) 
+		if(!sub.sub || !sub.sub[0])
 			sub.sub = [];
 
 		var newSub = {
@@ -163,6 +201,8 @@ SPapp.controller("mainController",
 
 		sub.hideSubs = true;
 		sub.studied = false;
+		sub.templateChildren = "templates/subs.html";
+
 	}
 
 	$scope.remove = function(parent, index) {

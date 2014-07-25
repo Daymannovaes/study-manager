@@ -17,7 +17,7 @@
                         {
                             "desc": "Cultura material e imaterial",
                             "sub": [],
-                            "studied": true,
+                            "studied": false,
                             "rate": null,
                             "edit": false,
                             "old_desc": "Cultura material e imaterial",
@@ -27,14 +27,14 @@
                         {
                             "desc": "Diversidade cultural brasileira",
                             "sub": [],
-                            "studied": true,
+                            "studied": false,
                             "rate": null,
                             "$$hashKey": "016"
                         },
                         {
                             "desc": "Conquista da américa, conflitos entre europeus e indígenas",
                             "sub": [],
-                            "studied": true,
+                            "studied": false,
                             "rate": null,
                             "$$hashKey": "017"
                         },
@@ -44,7 +44,7 @@
                                 "Conversar sobre"
                             ],
                             "sub": [],
-                            "studied": true,
+                            "studied": false,
                             "rate": null,
                             "$$hashKey": "018"
                         },
@@ -52,12 +52,12 @@
                             "desc": "Movimentos culturais ocidentais",
                             "hints": [],
                             "sub": [],
-                            "studied": true,
+                            "studied": false,
                             "rate": null,
                             "$$hashKey": "019"
                         }
                     ],
-                    "studied": true,
+                    "studied": false,
                     "rate": 1,
                     "$$hashKey": "00B"
                 },
