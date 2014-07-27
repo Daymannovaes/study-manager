@@ -12,8 +12,8 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/libs/bootstrap/styles/bootstrap.min.css">
 	
-	<link rel="stylesheet" type="text/css" href="assets/styles/main not min.css">
-	<link rel="stylesheet" type="text/css" href="assets/styles/reference not min.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/reference.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles/complete.css">
 
 	<script type="text/javascript" src="assets/libs/angular/angular.min.js"></script>
@@ -21,7 +21,7 @@
 
 	<script type="text/javascript" src="assets/scripts/app.js"></script>
 
-	<script type="text/javascript" src="assets/scripts/mainController not min.js"></script>
+	<script type="text/javascript" src="assets/scripts/mainController.js"></script>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -70,28 +70,17 @@
 						<br/>
 						
 						<h3>Sobre o uso do site</h3>
-						<p>Clique sobre as barras de cada matéria para abrir e fechar (ao abrir, a barra vai para o topo).</p>
+						<p>Clique sobre as barras de cada matéria para abrir e fechar (ao abrir, a barra vai para o topo, para voltar, clique sobre ela novamente).</p>
 
 						<br/>
 						
-						<p>Clique sobre os tópicos para abrir e fechar.</p>
-						<p>Clique sobre o texto do tópico para torna-lo editável.</p>
-
-						<br/>
-
-						<p>O botão de + adiciona o novo tópico.</p>
-						<p>O botão de - deleta aquele tópico.</p>
-
-						<br />
-
 						<p>O checkbox na direita de cada tópico indica se aquele tópico foi estudado ou não.</p>
 						<p>Ao marcar um tópico, é indicado uma barra de progresso no tópico pai.</p>
-						<p>Ao marcar um tópico, todos os filhos automaticamente são marcados.</p>
+						<p>Ao marcar um tópico, todos os sub-tópicos automaticamente são marcados.</p>
 
 						<br />
 
 						<p>Toda alteração feita ficará salva no seu computador (elas são salvas ao fechar a página), desta forma você pode adicionar novos tópicos, marcar como estudados, e sempre que voltar ao site toda alteração será mantida. Para limpar as alterações clique no link no topo "limpar alterações"</p>
-						<p>(Quando houver uma alteração de conteúdo do servidor, não será possível manter suas alterações, atualmente várias alterações serão feitas pois o conteúdo não está completo, mas em breve estará)</p>
 
 						<br />
 
@@ -111,9 +100,9 @@
 	background-repeat: no-repeat;">
 					<div class="container">
 						<div class="page-header">		
-							<h1 style="color:black">Bússola do Enem,</h1><h2 style="display:inline">O edital a seu favor. </h2> <h3 style="color:#069DBF"> {{screenplay.description}} </h3>
+							<h1 style="color:black">Bússola do Enem,</h1><h2 style="display:inline">O edital a seu favor. </h2> <h3 style="color:#069DBF"> Já pensou em guiar seus estudos baseado no edital? </h3>
 						</div>
-						<h2 style="display:inline">A ideia é simples,</h2> <h3>são apenas <strong>tópicos</strong>, onde a cada vez que você marcar <strong>"estudei"</strong>, uma barra de progresso indicará o quanto falta para concluir aquela etapa.</h3>
+						<h2 style="display:inline">A ideia é simples,</h2> <h3>são apenas <strong>tópicos</strong>, e cada vez que você marcar <strong>"estudei"</strong>, uma barra de progresso indicará o quanto falta para concluir os itens.</h3>
 						<p></p>
 						<p>Em poucos dias de estudo é fácil ver que a barra de progresso está quase completa. Foi tudo uma questão de organização, separando o edital em tópicos, conseguimos guiar nossos estudos, de forma que, em quanto mais tópicos destrincharmos, melhor definimos o que deve ser estudado e mais focado ficamos. Aproveite.<p>
 

@@ -179,15 +179,15 @@ li.sub-li {
 li.sub-li:hover {
 	background-color: #CACCE6;
 
-	border-left: 1px dashed #00ff00;
-	border-right: 1px dashed #00ff00;
+	border-left: 1px dashed #3E85DF;
+	border-right: 1px dashed #3E85DF;
 }
 
 li.sub-li:focus {
 	background-color: #CACCE6;
 
-	border-left: 1px dashed #00ff00;
-	border-right: 1px dashed #00ff00;
+	border-left: 1px dashed #3E85DF;
+	border-right: 1px dashed #3E85DF;
 	
 	outline-color: transparent;
 }
@@ -203,20 +203,16 @@ h3 {
 div.sub-li:hover {
 	background-color: #CACCE6;
 
-	border-left: 4px solid #00ff00;
-	border-right: 2px solid #00ff00;
+	border-left: 4px solid #0BA289;
+	border-right: 2px solid #0BA289;
 }
 div.sub-li-studied:hover {
 	background-color: #CACCE6;
 
-	border-left: 4px solid green;
-	border-right: 2px solid green;
+	border-left: 4px solid #00803d;
+	border-right: 2px solid #00803d;
 }	
 
-li.sub-li-edited:hover {
-	border-left: 1px dashed red;
-	border-right: 1px dashed red;
-}
 li.sub-li-studied:hover {
 	background-color: #61E770;
 	border-left: 1px dashed green;
@@ -293,7 +289,7 @@ input[type="checkbox"] {
 	position: relative;
 	display: inline-block;
 	
-	padding: 7px;
+	padding: 0.5em;
 
 	cursor: pointer;
 	

@@ -22,7 +22,9 @@ SPapp.controller("mainController",
     			localStorage.setItem("screenplay.showModal", false);
 
 				if(old_revision != new_revision) {
-					if(confirm("Há novo conteúdo disponível, deseja sobreescrever seus dados? \nSua revisão: " + old_revision + "\nNova revisão: " + new_revision)) {
+					if(confirm("Há novo conteúdo disponível, deseja sobreescrever seus dados? \nSua revisão: "
+								+ old_revision + "\nNova revisão: "
+								+ new_revision + "\n(em breve essa mensagem nunca mais aparecerá!)")) {
 						saveInLocalStorage = false;
 						localStorage.removeItem('screenplay');
 		    			localStorage.setItem("screenplay.revision", new_revision);
@@ -142,6 +144,7 @@ SPapp.controller("mainController",
 		}
 
 	}
+
 
 	$scope.upItem = function($parent, $index) {
 		if($index == 0) {
