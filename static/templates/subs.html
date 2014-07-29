@@ -1,13 +1,16 @@
-<ul data-ng-repeat="sub in sub.sub" data-ng-init="init(this)">
+<ul data-ng-repeat="sub in sub.sub" data-ng-init="init(this)" class="sub-ul">
 	<li data-ng-class="subClass(sub)" data-ng-click="toggle(sub)" tabindex="2" style="">
 		
 		
 		<span data-ng-include="template.edit(sub)">
 		</span>	
+
 		<div class="sub-info">
-			<ul class="container-test">
+			<ul class="container-actions">
 				<li>
-					<ul class="actions">
+					<ul class="actions"
+						onmouseover="$info.show(this)"
+						onmouseout="$info.hide(this)">
 						<li title="Adicionar subtópico"><span data-ng-click="add(sub)" class="glyphicon glyphicon-plus"></span></li>
 						<li title="Remover tópico"><span data-ng-click="remove(this.$parent.$parent.sub, $index)" class="glyphicon glyphicon-remove"></span></li>
 						<li class="divider"><span class="divider-vertical"></span></li>
@@ -19,9 +22,9 @@
 				<li title="Mostrar/esconder botões">
 					<span class="glyphicon glyphicon-chevron-left toggle-actions"
 						data-ng-click="toggle(sub);"
-						onclick="info.toggle(this)"
-						onmouseover="info.hide(this)"
-						onmouseout="info.show(this)">
+						onclick="$info.toggle(this)"
+						onmouseover="$info.show(this)"
+						onmouseout="$info.hide(this)">
 					</span>
 				</li>
 			</ul>

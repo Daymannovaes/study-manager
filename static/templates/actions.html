@@ -59,7 +59,9 @@
 
 	<ul class="container-test">
 		<li>
-			<ul class="actions">
+			<ul class="actions"
+				onmouseover="$info.show(this)"
+				onmouseout="$info.hide(this)">
 				<li title="Adicionar subtópico"><span class="glyphicon glyphicon-plus"></span></li>
 				<li title="Remover tópico"><span class="glyphicon glyphicon-remove"></span></li>
 				<li class="divider"><span class="divider-vertical"></span></li>
@@ -68,25 +70,26 @@
 				<li title="Mover tópico para baixo"><span class="glyphicon glyphicon-chevron-down"></span></li>
 			</ul>
 		</li>
-		<li title="Mostrar/esconder botões"><span class="glyphicon glyphicon-chevron-left toggle-actions"></span></li>
+		<li title="Mostrar/esconder botões">
+			<span class="glyphicon glyphicon-chevron-left toggle-actions"
+				onclick="$info.toggle(this)"
+				onmouseover="$info.show(this)"
+				onmouseout="$info.hide(this)">
+			</span>
+		</li>
 	</ul>
 	<script type="text/javascript">
-		$(".actions").mouseover(function() {
-			$(this).stop(true, true).show(100);
-		});
-		$(".actions").mouseout(function() {
-			$(this).stop(true, true).delay(300).hide(200);
-		});
-
-		$(".toggle-actions").mouseover(function() {
-			$(this).parent().parent().find(".actions").stop(true, true).delay(300).show(100);
-		});
-		$(".toggle-actions").mouseout(function(event) {
-			$(this).parent().parent().find(".actions").stop(true, true).delay(300).hide(200);
-		});
-		$(".toggle-actions").click(function(event) {
-			$(this).parent().parent().find(".actions").stop(true, true).toggle();
-		});
+		var info = {};
+		info.toggle = function(button) {
+			$(button).parents(".container-test").find(".actions").stop(true, true).toggle();			
+		}
+		info.show = function(button) {
+			$(button).parents(".container-test").find(".actions").stop(true, true).delay(300).show(100);
+			
+		}
+		info.hide = function(button) {
+			$(button).parents(".container-test").find(".actions").stop(true, true).delay(300).hide(200);
+		}
 	</script>
 </body>
 </html>

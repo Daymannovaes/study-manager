@@ -14,7 +14,7 @@
 	
 	<link rel="stylesheet" type="text/css" href="assets/styles/main not min.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles/reference not min.css">
-	<link rel="stylesheet" type="text/css" href="assets/styles/completea.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/complete.css">
 
 	<script type="text/javascript" src="assets/libs/angular/angular.min.js"></script>
 	<script type="text/javascript" src="assets/libs/bootstrap/scripts/bootstrap.min.js"></script>
@@ -156,5 +156,18 @@
 		</div>
 	</div>
 </div>
+	<script type="text/javascript">
+		var $info = {};
+		$info.toggle = function(button) {
+			$(button).parents(".container-actions").find(".actions").stop(true, true).toggle();			
+		}
+		$info.show = function(button) {
+			$(button).parents(".container-actions").find(".actions").stop(true, true).delay(300).show(100);
+			
+		}
+		$info.hide = function(button) {
+			$(button).parents(".container-actions").find(".actions").stop(true, true).delay(300).hide(200);
+		}
+	</script>
 </body>
 </html>

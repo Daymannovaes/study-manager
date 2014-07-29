@@ -1,5 +1,6 @@
 <form data-ng-submit="validate(sub)" data-ng-init="initInput(this)">
-	<input class="myform form-control {{$id}}"
+	<input type="text" title="Enter para confirmar a edição"
+	class="myform form-control {{$id}}"
 	data-ng-click="toggle(sub)"
 	data-ng-dblclick="sub.edit = false"
 	data-ng-model="sub.desc" 

@@ -158,7 +158,8 @@ div.sub-content ul li.opened_true:before {
 	-ms-user-select: none;
 	user-select: none;
 }
-.reference-content input {
+.reference-content input[type="text"] {
+	width: 30%;
 	display: inline;
 }
 
@@ -167,6 +168,7 @@ li.sub-li {
 
 	border-radius: 5px;
 	transition: 200ms background-color;
+	margin-top: 10px;
 }
 
 
@@ -297,20 +299,21 @@ input[type="checkbox"]:active {
 	padding: 10px;
 }
 
-.container-test li, ul {
+.container-actions li, ul:not(.sub-ul) {
 	display: inline;
 	list-style-type: none;
 	border: 0px;
 }
-.container-test li span {
+
+.container-actions li span {
 	padding: 7px;
 	border: 1px solid transparent;
 }
-.container-test li:not(.divider) {			
+.container-actions li:not(.divider) {			
 	padding-right: 1px;	
 	padding-left: 2px;
 }
-.container-test span.divider-vertical {
+.container-actions span.divider-vertical {
 	height: 40px;
 	margin: 0 9px;
 	border-left: 1px solid #727272;
@@ -319,18 +322,18 @@ input[type="checkbox"]:active {
 	margin: 0px;
 }
 
-.container-test li span.glyphicon:hover {
+.container-actions li span.glyphicon:hover {
 	transition: 200ms background-color;
 	transition: 400ms border;
 	background-color: #eee;
 	border: 1px solid #dadada;
 }
-.container-test .actions {
+.container-actions .actions {
 	position: relative;
 	left: -40px;
 	display: none;
 }
-.container-test .toggle-actions {
+.container-actions .toggle-actions {
 	position: absolute;
 	right: 50px;
 }
