@@ -12,7 +12,7 @@ SPapp.controller("mainController",
 		var old_revision,
 			new_revision;
 
-		$http.get("json/revision.json").success(function(data) {
+		$http.get("static/json/revision.json").success(function(data) {
 	        new_revision = data.revision;
 	        $scope.revision = new_revision;
     	}).then(function() {
@@ -43,7 +43,7 @@ SPapp.controller("mainController",
 			screenplay = $scope.screenplay;
 		}
 	    else {
-	    	$http.get("json/screenplay.json").success(function(data) {
+	    	$http.get("static/json/screenplay.json").success(function(data) {
 		        $scope.screenplay = data;
 		        localStorage.setItem("screenplay", JSON.stringify(data));
 		        screenplay = data;
@@ -55,10 +55,10 @@ SPapp.controller("mainController",
     $scope.template = {};
 
 	$scope.template.children = function(sub) {
-		return sub.sub ? "templates/subs.html" : ""; 
+		return sub.sub ? "static/templates/subs.html" : ""; 
 	}
 	$scope.template.edit = function(sub) {
-		return sub.edit ? "templates/edit-sub.html" : "templates/sub.html";
+		return sub.edit ? "static/templates/edit-sub.html" : "static/templates/sub.html";
 	}
 
 	$scope.toggle = function(sub) {
@@ -184,7 +184,6 @@ SPapp.controller("mainController",
 	$scope.defineToggle = function(sub) {
 		if(sub.sub && sub.sub[0]) {
 			sub.hideSubs = false;
-			sub.templateChildren = "templates/subs.html";
 		}
 		else {
 			delete sub.hideSubs;
@@ -204,7 +203,6 @@ SPapp.controller("mainController",
 
 		sub.hideSubs = true;
 		sub.studied = false;
-		sub.templateChildren = "templates/subs.html";
 
 	}
 
@@ -281,6 +279,7 @@ SPapp.controller("mainController",
 		$this.sub.old_desc = $this.sub.desc;
 		$timeout(function() {
 			$("input."+$this.$id).focus();
+			$("input."+$this.$id).click();
 		},250);
 	}
 

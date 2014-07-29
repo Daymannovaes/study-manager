@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="content-language" content="pt-br" />
+	<script type="text/javascript" src="../../assets/libs/jquery/jquery.min.js"></script>
+	<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+
+	<link rel="stylesheet" type="text/css" href="../../assets/libs/bootstrap/styles/bootstrap.min.css">
+	<script type="text/javascript" src="../../assets/libs/bootstrap/scripts/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+	<style type="text/css">
+		.container-test li, ul {
+			display: inline;
+			list-style-type: none;
+			border: 0px;
+		}
+		.container-test li span {
+			padding: 7px;
+			border: 1px solid transparent;
+		}
+		.container-test li:not(.divider) {			
+			padding-right: 1px;	
+			padding-left: 2px;
+		}
+		.container-test span.divider-vertical {
+			height: 40px;
+			margin: 0 9px;
+			border-left: 1px solid #727272;
+			border-right: 1px solid #A2A2A2;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		.container-test li span.glyphicon:hover {
+			transition: 200ms background-color;
+			transition: 400ms border;
+			background-color: #eee;
+			border: 1px solid #dadada;
+		}
+		.container-test {
+			/*position: absolute;
+			right: 0px;*/
+		}
+		.container-test .actions {
+			position: relative;
+			left: -40px;
+			display: none;
+		}
+		.container-test .toggle-actions {
+			position: absolute;
+			right: 50px;
+		}
+	</style>
+
+	<ul class="container-test">
+		<li>
+			<ul class="actions">
+				<li title="Adicionar subtópico"><span class="glyphicon glyphicon-plus"></span></li>
+				<li title="Remover tópico"><span class="glyphicon glyphicon-remove"></span></li>
+				<li class="divider"><span class="divider-vertical"></span></li>
+				<li title="Editar tópico"><span class="glyphicon glyphicon-pencil"></span></li>
+				<li title="Mover tópico para cima"><span class="glyphicon glyphicon-chevron-up"></span></li>
+				<li title="Mover tópico para baixo"><span class="glyphicon glyphicon-chevron-down"></span></li>
+			</ul>
+		</li>
+		<li title="Mostrar/esconder botões"><span class="glyphicon glyphicon-chevron-left toggle-actions"></span></li>
+	</ul>
+	<script type="text/javascript">
+		$(".actions").mouseover(function() {
+			$(this).stop(true, true).show(100);
+		});
+		$(".actions").mouseout(function() {
+			$(this).stop(true, true).delay(300).hide(200);
+		});
+
+		$(".toggle-actions").mouseover(function() {
+			$(this).parent().parent().find(".actions").stop(true, true).delay(300).show(100);
+		});
+		$(".toggle-actions").mouseout(function(event) {
+			$(this).parent().parent().find(".actions").stop(true, true).delay(300).hide(200);
+		});
+		$(".toggle-actions").click(function(event) {
+			$(this).parent().parent().find(".actions").stop(true, true).toggle();
+		});
+	</script>
+</body>
+</html>

@@ -159,17 +159,11 @@ div.sub-content ul li.opened_true:before {
 	user-select: none;
 }
 .reference-content input {
-	width: 30%;
 	display: inline;
 }
 
-.reference-content ul ul {
-	margin-top: 5px;
-}
-
 li.sub-li {
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 10px;
 
 	border-radius: 5px;
 	transition: 200ms background-color;
@@ -236,9 +230,7 @@ span.sub-desc:hover {
 	position: absolute;
 	right: 10%;
 	display: inline;
-	margin-top: 10px;
 	min-width: 50px;
-	max-width: 100px;
 }
 #content .reference-content .sub-info input {
 	width:initial;
@@ -303,4 +295,42 @@ input[type="checkbox"]:checked {
 input[type="checkbox"]:active {
 	transition: 250ms padding;
 	padding: 10px;
+}
+
+.container-test li, ul {
+	display: inline;
+	list-style-type: none;
+	border: 0px;
+}
+.container-test li span {
+	padding: 7px;
+	border: 1px solid transparent;
+}
+.container-test li:not(.divider) {			
+	padding-right: 1px;	
+	padding-left: 2px;
+}
+.container-test span.divider-vertical {
+	height: 40px;
+	margin: 0 9px;
+	border-left: 1px solid #727272;
+	border-right: 1px solid #A2A2A2;
+	padding: 0px;
+	margin: 0px;
+}
+
+.container-test li span.glyphicon:hover {
+	transition: 200ms background-color;
+	transition: 400ms border;
+	background-color: #eee;
+	border: 1px solid #dadada;
+}
+.container-test .actions {
+	position: relative;
+	left: -40px;
+	display: none;
+}
+.container-test .toggle-actions {
+	position: absolute;
+	right: 50px;
 }
