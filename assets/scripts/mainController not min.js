@@ -153,6 +153,8 @@ SPapp.controller("mainController",
 		}
 		else
 			$scope.changePosition($parent, $index-1, $index);
+
+		$scope.defineToggle($parent.sub);
 	}
 	$scope.downItem = function($parent, $index) {
 		if($index == $parent.sub.sub.length-1) {
