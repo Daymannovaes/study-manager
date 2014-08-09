@@ -17,11 +17,14 @@
 	<link rel="stylesheet" type="text/css" href="assets/styles/complete.css">
 
 	<script type="text/javascript" src="assets/libs/angular/angular.min.js"></script>
+	<script type="text/javascript" src="assets/libs/zepto/zepto.min.js"></script>
 	<script type="text/javascript" src="assets/libs/bootstrap/scripts/bootstrap.min.js"></script>
 
 	<script type="text/javascript" src="assets/scripts/app.js"></script>
 
 	<script type="text/javascript" src="assets/scripts/mainController not min.js"></script>
+	<script type="text/javascript" src="assets/scripts/swipe-left.js"></script>
+	<script type="text/javascript" src="assets/scripts/swipe-right.js"></script>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -47,7 +50,7 @@
 			<li><a href="http://enem.inep.gov.br/" target="_blank">enem.inep.gov.br</a></li>
 			<li><a href="http://download.inep.gov.br/educacao_basica/enem/edital/2014/edital_enem_2014.pdf" target="_blank">Edital do Enem 2014</a></li>
 			<li><a href="" data-toggle="modal" data-target="#tutorial">Como utilizar este site</a></li>
-			<li><a href="" onclick="if(confirm('deseja limpar suas alterações locais?')){localStorage.removeItem('screenplay');saveInLocalStorage=false;}">Limpar alterações</a></li>
+			<li><a href="" onclick="if(confirm('deseja limpar suas alterações locais?')){localStorage.removeItem('screenplay2');saveInLocalStorage=false;}">Limpar alterações</a></li>
 		</ul>
 	</div>
 
@@ -84,7 +87,7 @@
 
 						<br />
 
-						<p>Aproveite e compartilhe, não há nenhum direito reservado. E qualquer sugestão, seja de usabilidade ou de conteúdo, mande um email para <strong>daymannovaes@gmail.com</strong></p>
+						<p>Aproveite e compartilhe. E qualquer sugestão, seja de usabilidade ou de conteúdo, críticas ou conselhos, mande um email para <strong>daymannovaes@gmail.com</strong></p>
 
 						<br />
 					</div> <!-- End modal body -->
@@ -106,7 +109,7 @@
 						<p>Em poucos dias de estudo é fácil ver que a barra de progresso está quase completa. Foi tudo uma questão de organização, separando o edital em tópicos, conseguimos guiar nossos estudos, de forma que, em quanto mais tópicos destrincharmos, melhor definimos o que deve ser estudado e mais focado ficamos. Aproveite.<p>
 
 						<div class="reference-container">
-							<div data-ng-repeat="reference in screenplay.references">
+							<div data-ng-repeat="reference in screenplay.references track by reference.id">
 
 								<div class="reference">
 									<div ng-class="reference.referenceClass" class="reference-title" data-ng-click="toggleref(this)"
@@ -142,7 +145,7 @@
 										</div>
 
 										<div id="footer">
-											Nenhum direito reservado. <span style="color:white">daymannovaes@gmail.com</span>
+											(c) <span style="color:white">daymannovaes@gmail.com</span>
 										</div>
 									</div>
 								</div>

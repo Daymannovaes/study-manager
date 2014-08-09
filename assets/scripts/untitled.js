@@ -1,39 +1,22 @@
-getObjectById = function(obj, id) {
-	if(obj.id == id)
-		return obj;
+var Incer =  (function() {
+	Incer = function() {
+		this.init = function(init) {
+			this.inc = function() {
+					return ++init;
+				}
+			this.get = function() {
+					return init;
+				}
 
-	validateObject(obj, id);
-}
-
-validateObject = function(obj, id) {
-	if(typeof obj == "object")
-		traverseObject(obj, id);
-}
-
-traverseObject = function(obj, id) {
-	for(var index in obj) {
-		var temporary = getObjectById(obj[index], id);
-
-		if(temporary)
-			return temporary;
+			this.init = function(){};
+			
+			return this;
+		}	
 	}
-}
+	return new Incer();
+})();
 
-var Incer =  {
-	init: function(init) {
-		Incer = {
-			inc: function() {
-				return ++init;
-			},
-			get: function() {
-				return init;
-			}
-		}
-		return Incer;
-	}	
-}
-
-var count = function(obj) {
+var countAllObjects = function(obj) {
 	var value = {value: 0};
 
 	var callback = function() {
@@ -48,18 +31,8 @@ var count = function(obj) {
 	return value.value;
 }
 
-traverseAndApplyCallback = function(object, callback, arguments) {
-	for(index in object) {
-		obj = object[index];
-
-		if(typeof obj == "object") {
-			callback.call(obj, arguments);
-		}
-	}
-}
-
 createId = function(obj) {
-	Incer.init(count(obj));
+	Incer.init(0);
 
 	var callback = function(parentId) {
 
@@ -74,4 +47,14 @@ createId = function(obj) {
 	}
 
 	traverseAndApplyCallback(obj, callback);
+}
+
+traverseAndApplyCallback = function(object, callback, arguments) {
+	for(index in object) {
+		obj = object[index];
+
+		if(typeof obj == "object") {
+			callback.call(obj, arguments);
+		}
+	}
 }

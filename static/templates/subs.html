@@ -1,5 +1,5 @@
-<ul data-ng-repeat="sub in sub.sub" data-ng-init="init(this)" class="sub-ul">
-	<li data-ng-class="subClass(sub)" data-ng-click="toggle(sub)" tabindex="2" style="">
+<ul data-ng-repeat="sub in sub.sub track by sub.id" data-ng-init="init(this)" class="sub-ul">
+	<li data-ng-class="subClass(sub)" data-ng-click="toggle(sub)" tabindex="2" style="" swipe-left swipe-right>
 		
 		
 		<span data-ng-include="template.edit(sub)">

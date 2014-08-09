@@ -1,6 +1,11 @@
 var screenplay;
 var saveInLocalStorage = true;
 var showModal = localStorage.getItem("screenplay.showModal") != undefined ? localStorage.getItem("screenplay.showModal") : "true";
+var countObjectInit = 0;
+var countObject = 0;
+var band = 10; //client (me = 1)
+
+var toAdd = [];
 
 SPapp.controller("mainController",
 	
@@ -8,63 +13,98 @@ SPapp.controller("mainController",
 	
 	function($scope, $http, $timeout) {
 
-	function load() {
+	$scope.loadScreenplay = function() {
 		var old_revision,
 			new_revision;
+		
+		$scope.$loading = $("#loading");
+		$scope.$loading.text("Carregando conteúdo do servidor");
 
-		$http.get("static/json/revision.json").success(function(data) {
-	        new_revision = data.revision;
-	        $scope.revision = new_revision;
-    	}).then(function() {
-			old_revision = localStorage.getItem("screenplay.revision");
-				
-			if(old_revision) {
-    			localStorage.setItem("screenplay.showModal", false);
-
-				if(old_revision != new_revision) {
-					if(confirm("Há novo conteúdo disponível, deseja sobreescrever seus dados? \nSua revisão: "
-								+ old_revision + "\nNova revisão: "
-								+ new_revision + "\n(em breve essa mensagem nunca mais aparecerá!)")) {
-						saveInLocalStorage = false;
-						localStorage.removeItem('screenplay');
-		    			localStorage.setItem("screenplay.revision", new_revision);
-		    			localStorage.setItem("screenplay.showModal", true);
-						location.reload();
-					}
-				}
-			}
-			else 
-    			localStorage.setItem("screenplay.revision", new_revision);
-				
-		});
-
-		if(localStorage.getItem("screenplay")) {
-			$scope.screenplay = JSON.parse(localStorage.getItem("screenplay"));
+		if(localStorage.getItem("screenplay2")) {
+			$scope.screenplay = JSON.parse(localStorage.getItem("screenplay2"));
 			screenplay = $scope.screenplay;
+
+			$scope.loadRevision();
 		}
 	    else {
 	    	$http.get("static/json/screenplay.json").success(function(data) {
 		        $scope.screenplay = data;
-		        localStorage.setItem("screenplay", JSON.stringify(data));
+		        localStorage.setItem("screenplay2", JSON.stringify(data));
 		        screenplay = data;
-	    	});
+	    	}).then($scope.loadRevision);
 	    }
 	    
 	}
+	$scope.loadRevision = function() {
+		$scope.$loading.text("Verificando alterações");
+		
+		$http.get("static/json/revision2.json").success(function(data) {
+	        new_revision = data.revision;
+	        $scope.revision = new_revision;
+    	}).then($scope.handleRevisions);
+
+
+        countObject = countAllObjects(screenplay);
+        Incer.init(countObject * band);
+	}
+
+	$scope.handleRevisions = function() {
+		old_revision = parseInt(localStorage.getItem("screenplay.revision2")) || 0;
+		localStorage.setItem("screenplay.revision2", new_revision);
+
+		var getObjectFromRevision = function(revisions, revisionNumber) {
+			for(index in revisions) {
+				var revision = revisions[index];
+
+				if(revision.revision == revisionNumber)
+					return revision;
+			}
+		}
+			
+		if(old_revision)	
+			localStorage.setItem("screenplay.showModal", false);
+
+		if(old_revision != new_revision) {
+			$http.get("static/json/revisions.json").success(function(revisions) {
+				$scope.$loading.text("Carregando alterações na tela");
+		        //revisions = array
+		        
+		        while(old_revision != new_revision) {
+			        var objectsToAdd = getObjectFromRevision(revisions, ++old_revision).objects;
+			        $scope.handleRevisionEspecific(objectsToAdd);
+		        }
+	    	});
+		}
+	};
+
+	$scope.handleRevisionEspecific = function(objectsToAdd) {
+		for(index in objectsToAdd) {
+			var objectToAdd = objectsToAdd[index];
+
+			var parent = getObjectById($scope.screenplay, objectToAdd.parentId);
+
+			if(parent && parent.sub instanceof Array) {
+				parent.sub.push(objectToAdd);
+				removeProp(objectToAdd, "parent");
+
+				Incer._inc(countAllObjects({a:objectToAdd}));
+			}
+		}
+	};
 
     $scope.template = {};
 
 	$scope.template.children = function(sub) {
 		return sub.sub ? "static/templates/subs.html" : ""; 
-	}
+	};
 	$scope.template.edit = function(sub) {
 		return sub.edit ? "static/templates/edit-sub.html" : "static/templates/sub.html";
-	}
+	};
 
 	$scope.toggle = function(sub) {
 		if(sub.sub && sub.sub[0])
 			sub.hideSubs = !sub.hideSubs;
-	}
+	};
 	
 	$scope.toggleref = function($this) {
 		var activeReference = $this.$parent.activeReference;
@@ -89,7 +129,7 @@ SPapp.controller("mainController",
 
 		$scope.collapseAll($this.reference.sub);
 		$this.reference.show = "reference-content-container-true";
-	}
+	};
 	$scope.collapseAll = function(subs) {
 		for(index in subs) {
 			if(subs[index].sub && subs[index].sub[0]) {
@@ -97,7 +137,7 @@ SPapp.controller("mainController",
 				$scope.collapseAll(subs[index].sub);
 			}
 		}
-	}
+	};
 
 	$scope.getPercentChildrenComplete = function(sub) {
 		var checked = 0;
@@ -113,11 +153,11 @@ SPapp.controller("mainController",
 		}
 
 		rate = checked/length;
+		rate = rate || 0; //NaN
+
 		sub.rate = rate;
 		return Math.floor(rate*10);
-
-
-	}
+	};
 
 	$scope.subClass = function(sub) {
 		var stringClass = " opened_" + sub.hideSubs;
@@ -128,22 +168,33 @@ SPapp.controller("mainController",
 		stringClass += sub.studied ? " sub-li-studied" : "";
 
 		return stringClass;
-	}
+	};
 
 	$scope.init = function(sub) {
+		$scope.$loading.text("Carregando conteúdo na tela");
+
 		if(!sub.sub.studied)
 			sub.sub.studied = false;
 
 		if(!sub.sub.sub)
 			sub.sub.sub = [];
 
-		$("#loading").css("display", "none");
-		if(showModal == "true") {
-			$('#tutorial').modal('show');
-			showModal = "false";
+		countObjectInit++;
+
+		if(countObjectInit+4 >= countObject) {
+			$("#loading").css("display", "none");
+			if(showModal == "true") {
+				$('#tutorial').modal('show');
+				showModal = "false";
+				localStorage.setItem("screenplay.showModal", false);
+			}
 		}
 
-	}
+		sub.sub.classLi = ["sub-li", " opened_" + sub.sub.hideSubs,
+						   " complete-" + $scope.getPercentChildrenComplete(sub.sub),
+						   sub.sub.studied ? " sub-li-studied" : ""];
+
+	};
 
 
 	$scope.upItem = function($parent, $index) {
@@ -155,7 +206,7 @@ SPapp.controller("mainController",
 			$scope.changePosition($parent, $index-1, $index);
 
 		$scope.defineToggle($parent.sub);
-	}
+	};
 	$scope.downItem = function($parent, $index) {
 		if($index == $parent.sub.sub.length-1) {
 			console.log('finish');
@@ -163,7 +214,7 @@ SPapp.controller("mainController",
 		}
 
 		$scope.changePosition($parent, $index+1, $index)
-	}
+	};
 	$scope.changePosition = function($parent, idFrom, idTo) {
 		parent = $parent.sub.sub;
 
@@ -172,7 +223,7 @@ SPapp.controller("mainController",
 
 		parent[idTo] = cloneFrom;
 		parent[idFrom] = cloneTo;
-	}
+	};
 	$scope.upLevelItem = function($parent, oldParent, $index) {
 		var item = angular.copy(oldParent.sub[$index]);
 		oldParent.sub.splice($index, 1);
@@ -181,7 +232,7 @@ SPapp.controller("mainController",
 		var oldParentIndex = newParentArray.indexOf(oldParent);
 
 		newParentArray.splice(oldParentIndex, 0, item)
-	}
+	};
 
 	$scope.defineToggle = function(sub) {
 		if(sub.sub && sub.sub[0]) {
@@ -191,7 +242,7 @@ SPapp.controller("mainController",
 			delete sub.hideSubs;
 			sub.templateChildren = "";
 		}
-	}
+	};
 
 	$scope.add = function(sub) {
 		if(!sub.sub || !sub.sub[0])
@@ -199,14 +250,19 @@ SPapp.controller("mainController",
 
 		var newSub = {
 			edit:true,
-			studied:false
+			studied:false,
+			id: Incer.inc(),
+			parent: sub,
+			parentId: sub.id
 		}
 		sub.sub.unshift(newSub);
 
+		if(!hasParentInArray(toAdd, newSub))
+			toAdd.push(newSub);
+
 		sub.hideSubs = true;
 		sub.studied = false;
-
-	}
+	};
 
 	$scope.remove = function(parent, index) {
 		if(parent.sub[index].desc && !confirm("Deseja realmente excluir o tópico \""+parent.sub[index].desc+"\""))
@@ -217,11 +273,11 @@ SPapp.controller("mainController",
 
 		$scope.defineToggle(parent);
 
-	}
+	};
 
 	$scope.teste = function(sub) {
 		console.log(1);
-	}
+	};
 
 	$scope.studied = {};
 
@@ -236,7 +292,7 @@ SPapp.controller("mainController",
 		}
 
 		sub.studied = studied;
-	}
+	};
 
 	$scope.studied.update = function($this, event) {
 		var timer;
@@ -245,14 +301,14 @@ SPapp.controller("mainController",
 		$scope.studied.updateParents($this.$parent);
 		$scope.studied.updateChildren(sub);
 
-	}
+	};
 	$scope.studied.updateChildren = function(sub) {
 		for(index in sub.sub) {
 			sub.sub[index].studied = sub.studied;
 
 			$scope.studied.updateChildren(sub.sub[index]);
 		}
-	}
+	};
 	$scope.studied.updateParents = function($this) {
 		var studied = true;
 
@@ -268,34 +324,31 @@ SPapp.controller("mainController",
 		$this.sub.studied = studied;
 
 		$scope.studied.updateParents($this.$parent.$parent);
-	}
+	};
 
 
 	$scope.validate = function(sub) {
 		sub.edit = !sub.desc;
-
-		sub.edited = sub.edited == undefined ? false : sub.edited || sub.desc != sub.old_desc;
-	}
+	};
 	$scope.initInput = function($this) {
-		console.log();
-		$this.sub.old_desc = $this.sub.desc;
 		$timeout(function() {
 			$("input."+$this.$id).focus();
 			$("input."+$this.$id).click();
 		},250);
-	}
+	};
 
-	load();
+	$scope.loadScreenplay();
 }]);
 
 window.onbeforeunload = function() {
-	removeProp(screenplay, "element");
+	removeProp(screenplay, "parent");
 	removeProp(screenplay, "hideSubs");
 	removeProp(screenplay, "search");
+	removeProp(screenplay, "classLi");
 	desactivateReferences(screenplay);
-
+	
 	if(saveInLocalStorage)
-		localStorage.setItem("screenplay", JSON.stringify(screenplay));	
+		localStorage.setItem("screenplay2", JSON.stringify(screenplay));	
 }
 
 desactivateReferences = function() {
