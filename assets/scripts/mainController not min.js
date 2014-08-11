@@ -13,6 +13,10 @@ SPapp.controller("mainController",
 	
 	function($scope, $http, $timeout) {
 
+	var enemDate = new Date("11-08-2014");
+	var nowDate = new Date();
+	$scope.diffDate = Math.floor((enemDate - nowDate) / (1000*60*60*24));
+
 	$scope.loadScreenplay = function() {
 		var old_revision,
 			new_revision;
