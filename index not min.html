@@ -51,6 +51,7 @@
 			<li><a href="http://download.inep.gov.br/educacao_basica/enem/edital/2014/edital_enem_2014.pdf" target="_blank">Edital do Enem 2014</a></li>
 			<li><a href="" data-toggle="modal" data-target="#tutorial">Como utilizar este site</a></li>
 			<li><a href="" onclick="if(confirm('deseja limpar suas alterações locais?')){localStorage.removeItem('screenplay2');saveInLocalStorage=false;}">Limpar alterações</a></li>
+			<li><a href="">Faltam {{diffDate}} dias para o ENEM</a></li>
 		</ul>
 	</div>
 
@@ -104,9 +105,10 @@
 						<div class="page-header">		
 							<h1 style="color:black">Bússola do Enem,</h1><h2 style="display:inline">O edital a seu favor. </h2> <h3 style="color:#069DBF"> Já pensou em guiar seus estudos baseado no edital? </h3>
 						</div>
-						<h2 style="display:inline">A ideia é simples,</h2> <h3>são apenas <strong>tópicos</strong>, e cada vez que você marcar <strong>"estudei"</strong>, uma barra de progresso indicará o quanto falta para concluir os itens.</h3>
+						<h2 style="display:inline">A ideia é simples,</h2> <h3>são apenas <strong>tópicos</strong>, e cada vez que você marcar <strong>"estudei"</strong>, uma barra de progresso indicará o quanto falta para concluir os estudos.</h3>
 						<p></p>
-						<p>Em poucos dias de estudo é fácil ver que a barra de progresso está quase completa. Foi tudo uma questão de organização, separando o edital em tópicos, conseguimos guiar nossos estudos, de forma que, em quanto mais tópicos destrincharmos, melhor definimos o que deve ser estudado e mais focado ficamos. Aproveite.<p>
+						<p>O resultado vem em pouco tempo, separando o edital em tópicos, temos um grande controle sobre o conteúdo de estudo e podemos nos guiar de forma muito mais objetiva. Aproveite.</p>
+						Faltam <h3>  <strong> {{diffDate}} </strong></h3> para o ENEM.	
 
 						<div class="reference-container">
 							<div data-ng-repeat="reference in screenplay.references track by reference.id">
@@ -116,13 +118,13 @@
 									style="background:{{reference.color}}">
 										<h3>{{reference.name}}</h3>
 
-										<div class="search-{{reference.search}}">
+										<div class="search-{{reference.search}}" data-ng-hide="true">
 											<input type="text"  class="form-control" placeholder="Pesquisa" data-ng-click="toggleref(this)" data-ng-model="searchText" />
 										</div>
 									</div>
 									<div class="reference-content-container"  data-ng-class="reference.show">								
 										<div class="reference-content" data-ng-repeat="sub in reference.sub">
-											<div data-ng-click="toggle(sub)" data-ng-class="subClass(sub)" class="sub-li" data-ng-init="init(this)">
+											<div data-ng-click="toggle(sub)" data-ng-class="subClass(sub)" class="sub-li" data-ng-init="init(this)" swipe-left swipe-right>
 												
 												<h3>
 													{{ sub.desc }}
