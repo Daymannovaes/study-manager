@@ -2,5 +2,9 @@
 	{
 		"revision": 1,
 		"objects": [{"edit":false,"studied":false,"id":792,"parentId":663,"sub":[],"rate":0,"classLi":["sub-li"," opened_undefined"," complete-0",""],"desc":"Equações"},{"edit":false,"studied":false,"id":793,"parentId":663,"sub":[],"rate":0,"classLi":["sub-li"," opened_undefined"," complete-0",""],"desc":"Identificação"}]
+	},
+	{
+		"revision": 2,
+		"objects": [{"edit": false, "studied": false, "id": 792, "parentId": 188, "sub": [{"edit": false, "studied": false, "id": 794, "parentId": 792, "sub": [], "rate": 0, "desc": "Floema"}, {"edit": false, "studied": false, "id": 793, "parentId": 792, "sub": [], "rate": 0, "desc": "Xilema"} ], "rate": 0, "desc": "Tecidos condutores", "hideSubs": false }, {"edit": false, "studied": false, "id": 795, "parentId": 195, "sub": [], "rate": 0, "desc": "Tradução"}, {"edit": false, "studied": false, "id": 797, "parentId": 195, "sub": [], "rate": 0, "desc": "Transcrição"}, {"edit": false, "studied": false, "id": 800, "parentId": 183, "sub": [], "rate": 0, "desc": "Produção de insulina"} ]
 	}
 ]

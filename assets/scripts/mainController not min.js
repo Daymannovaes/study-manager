@@ -3,7 +3,7 @@ var saveInLocalStorage = true;
 var showModal = localStorage.getItem("screenplay.showModal") != undefined ? localStorage.getItem("screenplay.showModal") : "true";
 var countObjectInit = 0;
 var countObject = 0;
-var band = 10; //client (me = 1)
+var band = 1; //(client = 10) (me = 1)
 
 var toAdd = [];
 
@@ -193,11 +193,6 @@ SPapp.controller("mainController",
 				localStorage.setItem("screenplay.showModal", false);
 			}
 		}
-
-		sub.sub.classLi = ["sub-li", " opened_" + sub.sub.hideSubs,
-						   " complete-" + $scope.getPercentChildrenComplete(sub.sub),
-						   sub.sub.studied ? " sub-li-studied" : ""];
-
 	};
 
 
@@ -348,7 +343,6 @@ window.onbeforeunload = function() {
 	removeProp(screenplay, "parent");
 	removeProp(screenplay, "hideSubs");
 	removeProp(screenplay, "search");
-	removeProp(screenplay, "classLi");
 	desactivateReferences(screenplay);
 	
 	if(saveInLocalStorage)
