@@ -28,6 +28,7 @@
 	padding: 2em;
 
 	color: #ddd;
+	cursor: pointer;
 	
 }
 .reference-title:hover {
@@ -46,6 +47,7 @@
 	padding: 15px;
 
 	color: #eee;
+	cursor: pointer;
 	
 }
 .reference-title-true:hover {
@@ -99,8 +101,6 @@
 
 .reference {
 	box-shadow: 0px 10px 24px 1px black;
-
-	cursor: pointer;
 }
 
 .something {
