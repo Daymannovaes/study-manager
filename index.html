@@ -1,91 +1,98 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-	<meta http-equiv="content-language" content="pt-br" />
-	
-	<title>Bússola</title>
-	<meta name="description" content="Rápido e leve, a Bússola pode ser o seu melhor guia de estudos. Baseado no edital do ENEM, contém todo o conteúdo de uma forma simples e fácil" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="content-language" content="pt-br" />
 
-	<script type="text/javascript" src="assets/libs/jquery/jquery.min.js"></script>
-	<link rel="shortcut icon" type="image/ico" href="static/images/favicon.ico" />
+  <title>Bússola</title>
+  <meta name="description"
+    content="Rápido e leve, a Bússola pode ser o seu melhor guia de estudos. Baseado no edital do ENEM, contém todo o conteúdo de uma forma simples e fácil" />
 
-	<link rel="stylesheet" type="text/css" href="assets/libs/bootstrap/styles/bootstrap.min.css">
-	
-	<link rel="stylesheet" type="text/css" href="assets/styles/main.css">
-	<link rel="stylesheet" type="text/css" href="assets/styles/reference.css">
-	<link rel="stylesheet" type="text/css" href="assets/styles/complete.css">
+  <script type="text/javascript" src="assets/libs/jquery/jquery.min.js"></script>
+  <link rel="shortcut icon" type="image/ico" href="static/images/favicon.ico" />
 
-	<script type="text/javascript" src="assets/libs/angular/angular.min.js"></script>
-	<script type="text/javascript" src="assets/libs/zepto/zepto.min.js"></script>
-	<script type="text/javascript" src="assets/libs/bootstrap/scripts/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/libs/bootstrap/styles/bootstrap.min.css">
 
-	<script type="text/javascript" src="assets/scripts/app.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles/reference.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles/complete.css">
 
-	<script type="text/javascript" src="assets/scripts/mainController.js"></script>
+  <script type="text/javascript" src="assets/libs/angular/angular.min.js"></script>
+  <script type="text/javascript" src="assets/libs/zepto/zepto.min.js"></script>
+  <script type="text/javascript" src="assets/libs/bootstrap/scripts/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="assets/scripts/app.js"></script>
+
+  <script type="text/javascript" src="assets/scripts/mainController.js"></script>
 </head>
+
 <body>
 
 
-<div data-ng-app="screenplay">
-	<div data-ng-controller="mainController">
+  <div data-ng-app="screenplay">
+    <div data-ng-controller="mainController">
 
-		<div id="wrapper">
-			<div id="header" style="background: url('static/images/bussola.png');
-									background-position: top right;
-									background-size: 15em;
-									background-repeat: no-repeat;">
-					<div class="container">
-						<div class="reference-container">
-							<div data-ng-repeat="reference in screenplay.references">
+      <div id="wrapper">
+        <div id="header" style="background: url('static/images/bussola.png');
+            background-position: top right;
+            background-size: 15em;
+            background-repeat: no-repeat;">
+          <div class="container">
+            <div class="reference-container">
+              <div data-ng-repeat="reference in screenplay.references">
 
-								<div class="reference">
-									<div ng-class="reference.referenceClass" class="reference-title" data-ng-click="toggleref(this)"
-									style="background:{{reference.color}}">
-										<h3>{{reference.name}}</h3>
+                <div class="reference">
+                  <div ng-class="reference.referenceClass" class="reference-title" data-ng-click="toggleref(this)"
+                    style="background:{{reference.color}}">
+                    <h3>{{reference.name}}</h3>
 
-										<div class="search-{{reference.search}}" data-ng-hide="true">
-											<input type="text"  class="form-control" placeholder="Pesquisa" data-ng-click="toggleref(this)" data-ng-model="searchText" />
-										</div>
-									</div>
-									<div class="reference-content-container"  data-ng-class="reference.show">								
-										<div class="reference-content" data-ng-repeat="sub in reference.sub">
-											<div data-ng-click="toggle(sub)" data-ng-class="subClass(sub)" class="sub-li" data-ng-init="init(this)" swipe-left swipe-right>
-												
-												<h3>
-													{{ sub.desc }}
-												</h3>
-												<button data-ng-click="add(sub)">
-													+
-												</button>
-												<div class="sub-info">
-													
-												<input type="checkbox" data-ng-model="sub.studied" data-ng-click="toggle(sub)" data-ng-change="studied.update(this)"/>
-													<label class="child-number">
-														{{sub.sub.length}}
-													</label>
-												</div>
-											</div>
+                    <div class="search-{{reference.search}}" data-ng-hide="true">
+                      <input type="text" class="form-control" placeholder="Pesquisa" data-ng-click="toggleref(this)"
+                        data-ng-model="searchText" />
+                    </div>
+                  </div>
+                  <div class="reference-content-container" data-ng-class="reference.show">
+                    <div class="reference-content" data-ng-repeat="sub in reference.sub">
+                      <div data-ng-click="toggle(sub)" data-ng-class="subClass(sub)" class="sub-li"
+                        data-ng-init="init(this)" swipe-left swipe-right>
 
-											<div data-ng-hide="sub.hideSubs" class="sub-content">
-												<span data-ng-include="template.children(sub)" />
-											</div>
-										</div>
+                        <h3>
+                          {{ sub.desc }}
+                        </h3>
+                        <button data-ng-click="add(sub)">
+                          +
+                        </button>
+                        <div class="sub-info">
 
-										<div id="footer">
-											<span style="color:white">(c) <a href="http://daymannovaes.github.io/">Dayman Novaes.</a></span>
-										</div>
-									</div>
-								</div>
-							</div> <!-- END repeat references -->
-						</div> <!-- END reference container -->
-				</div>
-			</div> <!-- END header -->
-			<!-- <div id="footer">
+                          <input type="checkbox" data-ng-model="sub.studied" data-ng-click="toggle(sub)"
+                            data-ng-change="studied.update(this)" />
+                          <label class="child-number">
+                            {{sub.sub.length}}
+                          </label>
+                        </div>
+                      </div>
+
+                      <div data-ng-hide="sub.hideSubs" class="sub-content">
+                        <span data-ng-include="template.children(sub)" />
+                      </div>
+                    </div>
+
+                    <div id="footer">
+                      <span style="color:white">(c) <a href="http://daymannovaes.github.io/">Dayman Novaes.</a></span>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- END repeat references -->
+            </div> <!-- END reference container -->
+          </div>
+        </div> <!-- END header -->
+        <!-- <div id="footer">
 				footer
 			</div> -->
-		</div>
-	</div>
-</div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
